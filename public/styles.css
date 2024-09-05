@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 20px;
+}
+
+.form-section, .table-section {
+    flex: 1; /* Ambas secciones ocupan el mismo espacio */
+}
+
+.form-section form {
+    margin-bottom: 20px; /* Espacio entre los formularios */
+}
+
+h1 {
+    text-align: 0;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+

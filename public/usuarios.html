@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">        
+        <div class="form-section">
+            <h1>Gestión de Usuarios</h1>
+            <h2>Agregar Usuario</h2>
+            <form id="addUserForm">
+                <input type="text" id="username" placeholder="Nombre de usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Agregar</button>
+            </form>
+
+            <h2>Actualizar Usuario</h2>
+            <form id="updateUserForm">
+                <input type="number" id="updateUserId" placeholder="ID del usuario" required>
+                <input type="text" id="updateUsername" placeholder="Nuevo nombre de usuario" required>
+                <input type="password" id="updatePassword" placeholder="Nueva contraseña" required>
+                <button type="submit">Actualizar</button>
+            </form>
+        </div>
+
+        <div class="table-section">
+            <h2>Lista de Usuarios</h2>
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre de usuario</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarán los usuarios dinámicamente -->
+                </tbody>
+            </table><br>
+            <div id="result"></div><br>
+        </div>
+
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

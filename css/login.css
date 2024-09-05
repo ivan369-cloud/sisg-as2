@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Century Gothic', sans-serif;
+    text-align: center;
+}
+
+form {
+    padding: 20px;
+    background-color: #381b1ba6;
+    margin: 0 auto; /* Centra horizontalmente */
+    width: 300px; /* Controla el ancho del formulario */
+    margin-top: 150px; /* Mayor espacio arriba para centrar verticalmente */
+    padding-top: 28px;
+    border-radius: 8px;
+    position: relative; /* Asegura que esté centrado dentro del contenedor */
+}
+
+h1 {
+    text-align: center;
+    padding: 12px;
+    color: rgb(206, 203, 203);
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type='submit'] {
+    background-color: #48e;
+    color: #fff;
+    width: calc(80% - 20px);
+    margin: 20px 10%;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+input[type='submit']:hover {
+    background-color: #3498db;
+}
+
+.ok, .bad, .off {
+    text-align: center;
+    width: 17%;
+    padding: 12px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.ok {
+    background-color: #1e6;
+}
+
+.bad {
+    background-color: #a22;        
+}
+
+.off {
+    background-color: rgb(0, 0, 0);
+}
+
+body {
+    background-image: url(../IMG/fondo-sisg.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el alto de la ventana */
+    color: white; /* Color del texto en el cuerpo */
+    display: flex; /* Utiliza Flexbox para el layout */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-direction: column; /* Asegura un flujo vertical */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el padding predeterminado del cuerpo */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho y alto total del elemento */
+}
+
+.mensaje {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    text-align: left;
+    padding: 6px;
+    color: red;
+}
+
+h6 {
+    text-align: center;
+    padding: 12px;
+    color: rgb(206, 203, 203);
+    line-height: 20px;
+}
+
+.gabo {
+    padding: 50px 20px;
+    background-color: #381b1ba6;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-top: 28px;
+    line-height: 20px;
+    border-radius: 8px;
+}
+
+header {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    background-color: rgba(0, 0, 0,.3);
+}
+
+header h1 {
+    margin-left: 5px;
+    align-items: center;
+    width: calc(20% - 100px);
+    font-family: 'Montez', cursive;
+    font-size: 55px;
+}
+
+header a {
+    margin-right: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    transition: all ease 300ms;
+}
+
+.login-box {
+    background-image: url(../IMG/fondo-sisg.jpg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px); /* Centra la caja de login */
+}
+
+
+/* Estilo para el menú de navegación */
+nav {
+    background-color: #333; /* Color de fondo del menú */
+    padding: 10px 0; /* Espaciado arriba y abajo */
+    position: fixed; /* Fija el menú en la parte superior */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Posición en la parte superior */
+    z-index: 1000; /* Superposición por encima del contenido */
+}
+
+.menu {
+    display: flex; /* Organiza los elementos en línea */
+    justify-content: center; /* Centra el menú horizontalmente */
+    list-style: none; /* Elimina los puntos de lista */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+}
+
+.menu li {
+    margin: 0 15px; /* Espacio entre los elementos del menú */
+}
+
+.menu a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px 20px; /* Espaciado dentro del enlace */
+    transition: background 0.3s; /* Transición suave para el fondo */
+}
+
+.menu a:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+
