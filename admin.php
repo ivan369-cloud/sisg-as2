@@ -15,7 +15,8 @@
         <ul class="menu">
             <li><a href="index.html">Salir</a></li>
             <li><a href="microservice/profile.php">Perfil de usario</a></li> 
-            <li><a href="public/usuarios.html">Agregar usuarios</a></li>            
+            <li><a href="public/usuarios.html">Agregar usuarios</a></li>
+            <li><a href="empleados/empleado.html">Empleados</a></li>             
         </ul>
     </nav>
    
