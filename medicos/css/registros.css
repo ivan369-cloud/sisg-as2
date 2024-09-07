@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos la altura completa de la ventana */
+    margin: 0;
+    font-family: 'Century Gothic', sans-serif;
+    background-color: #f0f0f0; /* Puedes cambiar el color de fondo según tus necesidades */
+}
+
+form {
+    width: 70%; 
+    height: auto; /* Ajusta la altura del formulario según su contenido */
+    background: linear-gradient(to left, rgb(61, 157, 231), rgb(125, 233, 233));
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.franja {
+    background-image: url(../IMG/Medicos/med.jpg);
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.text{
+    position: relative;
+    margin-left: 35%;
+    padding: 2.8vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 7vh;
+    text-align: center;
+}
+label{
+    font-size: 1.1rem;
+}
+ input[type="text"], input[type="tel"], input[type="email"], select {
+    border: none;
+    border-bottom: 1.2px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 2%;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 0.5%;
+    margin-bottom: 1%;
+}
+input[type = "date" ]{
+    border : none;
+    border-bottom : 1px  solid  #fff ;
+    background: transparent;
+    outline : none ;
+    height : 25px ;
+    color : rgb(0, 0, 0) ;
+    font-size: 1rem;
+} 
+button {
+    border: none;
+    outline: none;
+    height: 5vh;
+    width: 20vh;
+    background-color: #0929a7;
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    margin-top: 1%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    float: right;
+}
+
+button:hover {
+    background-color: #98c0f4;
+    color: #000;
+}
