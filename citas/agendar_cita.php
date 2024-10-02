@@ -3,7 +3,7 @@
 function redirigirConMensaje($mensaje, $tipo) {
     echo "<script>
             alert('$mensaje');
-            window.location.href = 'index.html';
+            window.location.href = 'agendar_cita.html';
           </script>";
     exit();
 }

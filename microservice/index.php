@@ -1,19 +1,28 @@
 <?php
+// Cargar configuración
+$config = include('config.php');
+
+// Iniciar sesión
+session_start();
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
     // Datos para enviar al microservicio
     $data = [
-        'username' => $username,
-        'password' => $password
+        'usuario' => $username,
+        'contraseña' => $password
     ];
 
     // Convertir los datos a formato JSON
     $jsonData = json_encode($data);
 
+    // URL del microservicio desde la configuración
+    $microserviceUrl = $config['microservice_url'];
+
     // Inicializar cURL
-    $ch = curl_init('https://microservice-users-production-81bc.up.railway.app/login');
+    $ch = curl_init($microserviceUrl);
 
     // Configurar opciones de cURL
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -32,13 +41,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Manejar errores HTTP
         echo "<p>Error al iniciar sesión: Código de respuesta $httpCode</p>";
     } else {
-        // Redirigir a admin.php en caso de inicio de sesión exitoso
-        header('Location: ../admin.php');
-        exit(); // Importante para detener la ejecución del script después de la redirección
+        // Decodificar la respuesta JSON
+        $responseData = json_decode($response, true);
+
+        // Verificar si el campo 'nombre' está presente en la respuesta
+        if (isset($responseData['id_cargo']) && isset($responseData['usuario'])) {
+            $idCargo = $responseData['id_cargo'];
+            $nombreUsuario = $responseData['usuario'];
+
+            // Almacenar el nombre del usuario en la sesión
+            $_SESSION['nombreUsuario'] = $nombreUsuario;
+
+            // Redirigir según el rol
+            if ($idCargo == 1 || $idCargo == 2) {
+                header("Location: ../admin.php");
+            } elseif ($idCargo == 3) {
+                header("Location: ../empleado.php");
+            } else {
+                echo "<p>Rol no autorizado</p>";
+            }
+            exit(); // Detener la ejecución después de la redirección
+        } else {
+            echo "<p>Error al iniciar sesión: Respuesta inesperada del servidor</p>";
+        }
     }
 
     // Cerrar la conexión cURL
     curl_close($ch);
 }
 ?>
-

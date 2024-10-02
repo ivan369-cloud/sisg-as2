@@ -184,4 +184,16 @@ nav {
     border-radius: 5px; /* Esquinas redondeadas */
 }
 
+.aun {
+    color: white; /* Cambia el color del texto a blanco */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Hace el texto en negrita */
+    padding: 5px; /* Agrega espacio alrededor del texto */
+    
+   
+}
+.aun:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
 

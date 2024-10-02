@@ -67,6 +67,13 @@ button:hover {
     background-color: #0056b3;
 }
 
+p {
+    font-size: 0.9em;
+    margin: 5px 0 0;
+    color: #ff3333;
+    font-weight: bold;
+}
+
 h1{
     color: white;
 }
@@ -78,4 +85,3 @@ h1{
 .btn-modificar{    
     background-color: green;
 }
-

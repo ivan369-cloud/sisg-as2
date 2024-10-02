@@ -19,16 +19,17 @@
     if (isset($_GET['user_id'])) {
         $userId = $_GET['user_id'];
 
-        $result = file_get_contents("https://microservice-users-production-81bc.up.railway.app/profile/$userId");
+        // $result = file_get_contents("https://microservice-users-production-81bc.up.railway.app/profile/$userId");
+        $result = file_get_contents("http://localhost:3000/profile/$userId");
 
         if ($result === FALSE) {
             echo "<p>Error al consultar el perfil.</p>";
         } else {
             $user = json_decode($result, true);
             echo "<h2>Información del Usuario</h2>";
-            echo "<p>Nombre de Usuario: " . htmlspecialchars($user['username']) . "</p>";
-            echo "<p>Email: " . htmlspecialchars($user['email']) . "</p>";
-            echo "<p>Fecha de Registro: " . htmlspecialchars($user['created_at']) . "</p>";
+            echo "<p>Nombres: " . htmlspecialchars($user['nombre']) . "</p>";
+            echo "<p>Usuario: " . htmlspecialchars($user['usuario']) . "</p>";
+            echo "<p>ID Cargo: " . htmlspecialchars($user['id_cargo']) . "</p>";
         }
     }
     ?>
