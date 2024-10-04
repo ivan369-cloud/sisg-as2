@@ -36,16 +36,16 @@
                                     
                             <label for="especialidad">Especialidad médica:</label>
                             <select id="especialidad" name="especialidad">
-                                <option value="cardiologia" <?= $datos->especialidad == 'cardiologia' ? 'selected' : '' ?>>Cardiología</option>
-                                <option value="pediatria" <?= $datos->especialidad == 'pediatria' ? 'selected' : '' ?>>Pediatría</option>
-                                <option value="dermatologia" <?= $datos->especialidad == 'dermatologia' ? 'selected' : '' ?>>Dermatología</option>
-                                <option value="neurologia" <?= $datos->especialidad == 'neurologia' ? 'selected' : '' ?>>Neurología</option>
-                                <option value="ginecologia" <?= $datos->especialidad == 'ginecologia' ? 'selected' : '' ?>>Ginecología</option>
-                                <option value="urologia" <?= $datos->especialidad == 'urologia' ? 'selected' : '' ?>>Urología</option>
-                                <option value="oftalmologia" <?= $datos->especialidad == 'oftalmologia' ? 'selected' : '' ?>>Oftalmología</option>
-                                <option value="psiquiatria" <?= $datos->especialidad == 'psiquiatria' ? 'selected' : '' ?>>Psiquiatría</option>
-                                <option value="traumatologia" <?= $datos->especialidad == 'traumatologia' ? 'selected' : '' ?>>Traumatología</option>
-                                <option value="oncologia" <?= $datos->especialidad == 'oncologia' ? 'selected' : '' ?>>Oncología</option>
+                                <option value="Cardiologia" <?= $datos->especialidad == 'Cardiologia' ? 'selected' : '' ?>>Cardiología</option>
+                                <option value="Pediatria" <?= $datos->especialidad == 'Pediatria' ? 'selected' : '' ?>>Pediatría</option>
+                                <option value="Dermatologia" <?= $datos->especialidad == 'Dermatologia' ? 'selected' : '' ?>>Dermatología</option>
+                                <option value="Neurologia" <?= $datos->especialidad == 'Neurologia' ? 'selected' : '' ?>>Neurología</option>
+                                <option value="Ginecologia" <?= $datos->especialidad == 'Ginecologia' ? 'selected' : '' ?>>Ginecología</option>
+                                <option value="Urologia" <?= $datos->especialidad == 'Urologia' ? 'selected' : '' ?>>Urología</option>
+                                <option value="Oftalmologia" <?= $datos->especialidad == 'Oftalmologia' ? 'selected' : '' ?>>Oftalmología</option>
+                                <option value="Psiquiatria" <?= $datos->especialidad == 'Psiquiatria' ? 'selected' : '' ?>>Psiquiatría</option>
+                                <option value="Traumatologia" <?= $datos->especialidad == 'Traumatologia' ? 'selected' : '' ?>>Traumatología</option>
+                                <option value="Oncologia" <?= $datos->especialidad == 'Oncologia' ? 'selected' : '' ?>>Oncología</option>
                             </select><br><br>
 
                             <label>Colegiado: </label>
@@ -65,8 +65,8 @@
                             
                             <label for="sexo">Sexo:</label>
                             <select id="sexo" name="sexo">
-                                <option value="femenino" <?= $datos->sexo == 'femenino' ? 'selected' : '' ?>>Femenino</option>
-                                <option value="masculino" <?= $datos->sexo == 'masculino' ? 'selected' : '' ?>>Masculino</option>
+                                <option value="Femenino" <?= $datos->sexo == 'Femenino' ? 'selected' : '' ?>>Femenino</option>
+                                <option value="Masculino" <?= $datos->sexo == 'Masculino' ? 'selected' : '' ?>>Masculino</option>
                             </select><br><br>
                                 
                             <label>Fecha de Nacimiento: </label>

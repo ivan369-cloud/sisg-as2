@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-09-2024 a las 08:55:11
+-- Tiempo de generación: 04-10-2024 a las 04:32:08
 -- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Versión de PHP: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -59,7 +59,7 @@ CREATE TABLE `empleados` (
   `nombre` varchar(50) NOT NULL,
   `apellido` varchar(50) NOT NULL,
   `edad` int(11) NOT NULL,
-  `sexo` enum('M','F') NOT NULL,
+  `sexo` varchar(10) NOT NULL,
   `email` varchar(100) NOT NULL,
   `telefono` varchar(15) NOT NULL,
   `area` varchar(50) NOT NULL
@@ -70,8 +70,9 @@ CREATE TABLE `empleados` (
 --
 
 INSERT INTO `empleados` (`id_empleado`, `dpi`, `nombre`, `apellido`, `edad`, `sexo`, `email`, `telefono`, `area`) VALUES
-(1, '1231231241288', 'a', 'a', 12, 'M', 'aranaaxel22@gmail.com', '123412412412', 'Administración'),
-(15, '1234567891234', 'Cato', ' Gato', 22, 'M', 'aaasdadas@edfsdfsdfsdf.com', '123456789', 'Administración');
+(15, '1234567891234', 'Cato', ' Alvarado', 22, 'Masculino', 'aaasdadas@edfsdfsdfsdf.com', '123456789', 'Administración'),
+(17, '1516148952369', 'Monica', 'Perez', 21, 'Femenino', 'monica@gmail.com', '41984598', 'Contabilidad'),
+(19, '12345678', 'Adrian', 'Reyes', 22, 'Masculino', 'adrian@ar.com', '96582365', 'Seguridad');
 
 -- --------------------------------------------------------
 
@@ -80,24 +81,29 @@ INSERT INTO `empleados` (`id_empleado`, `dpi`, `nombre`, `apellido`, `edad`, `se
 --
 
 CREATE TABLE `medicos` (
-  `id_medico` int(11) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
-  `apellido` varchar(50) NOT NULL,
+  `ID_med` int(11) NOT NULL,
+  `nombre_med` varchar(50) NOT NULL,
+  `apellido_med` varchar(50) NOT NULL,
   `especialidad` varchar(50) NOT NULL,
-  `dpi` varchar(13) NOT NULL,
-  `telefono` varchar(8) NOT NULL,
-  `direccion` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `colegiado` int(10) NOT NULL,
-  `genero` varchar(1) NOT NULL
+  `colegiado` int(11) NOT NULL,
+  `dpi` int(13) NOT NULL,
+  `correo` varchar(50) NOT NULL,
+  `telefono` int(8) NOT NULL,
+  `direccion` varchar(100) NOT NULL,
+  `sexo` varchar(10) NOT NULL,
+  `fecha_nacimiento` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `medicos`
 --
 
-INSERT INTO `medicos` (`id_medico`, `nombre`, `apellido`, `especialidad`, `dpi`, `telefono`, `direccion`, `email`, `colegiado`, `genero`) VALUES
-(1, 'Oscar', 'Garcia', 'Ginecologo', '1234567891231', '12345678', 'Zona 1, Guatemala', 'ogarcia@sisg.com.gt', 1544, 'M');
+INSERT INTO `medicos` (`ID_med`, `nombre_med`, `apellido_med`, `especialidad`, `colegiado`, `dpi`, `correo`, `telefono`, `direccion`, `sexo`, `fecha_nacimiento`) VALUES
+(1, 'Lucia', 'Morales', 'Cardiologia', 5896, 1651666, 'lumo@gmail.com', 41259632, 'km 4 calle 3 zona 3', 'femenino', '1992-08-12'),
+(3, 'Maria Juana', 'Perez Sagastume', 'Oncologia', 98458, 2147483647, 'mf@gmail.com', 745896587, 'zona 9', 'femenino', '2024-04-29'),
+(6, 'Axel', 'Alvarado', 'Cardiologia', 94984, 4896814, 'ax@ax.com', 5662558, 'zona 15', 'masculino', '2024-09-01'),
+(7, 'Lester', 'Lopez', 'Oftalmologia', 1849, 41686846, 'mn@nj.com', 2849849, 'zona 10', 'masculino', '2024-09-01'),
+(8, 'Ivan', 'Perez', 'Psiquiatria', 8468, 984651, 'mek@oeivn.com', 46851, 'zona 5', 'masculino', '2024-09-02');
 
 -- --------------------------------------------------------
 
@@ -195,7 +201,7 @@ ALTER TABLE `empleados`
 -- Indices de la tabla `medicos`
 --
 ALTER TABLE `medicos`
-  ADD PRIMARY KEY (`id_medico`);
+  ADD PRIMARY KEY (`ID_med`);
 
 --
 -- Indices de la tabla `pacientes`
@@ -229,13 +235,13 @@ ALTER TABLE `citas`
 -- AUTO_INCREMENT de la tabla `empleados`
 --
 ALTER TABLE `empleados`
-  MODIFY `id_empleado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_empleado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `medicos`
 --
 ALTER TABLE `medicos`
-  MODIFY `id_medico` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID_med` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `pacientes`

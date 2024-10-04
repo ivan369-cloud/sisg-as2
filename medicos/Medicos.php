@@ -23,16 +23,16 @@
                         
                 <label for="especialidad">Especialidad médica:</label>
                 <select id="especialidad" name="especialidad">
-                    <option value="cardiologia">Cardiología</option>
-                    <option value="pediatria">Pediatría</option>
-                    <option value="dermatologia">Dermatología</option>
-                    <option value="neurologia">Neurología</option>
-                    <option value="ginecologia">Ginecología</option>
-                    <option value="urologia">Urología</option>
-                    <option value="oftalmologia">Oftalmología</option>
-                    <option value="psiquiatria">Psiquiatría</option>
-                    <option value="traumatologia">Traumatología</option>
-                    <option value="oncologia">Oncología</option>
+                    <option value="Cardiologia">Cardiología</option>
+                    <option value="Pediatria">Pediatría</option>
+                    <option value="Dermatologia">Dermatología</option>
+                    <option value="Neurologia">Neurología</option>
+                    <option value="Ginecologia">Ginecología</option>
+                    <option value="Urologia">Urología</option>
+                    <option value="Oftalmologia">Oftalmología</option>
+                    <option value="Psiquiatria">Psiquiatría</option>
+                    <option value="Traumatologia">Traumatología</option>
+                    <option value="Oncologia">Oncología</option>
                 </select><br><br>
 
                 <label>Colegiado: </label>
@@ -52,8 +52,8 @@
                 
                 <label for="sexo">Sexo:</label>
                 <select id="sexo" name="sexo">
-                    <option value="femenino">Femenino</option>
-                    <option value="masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
                 </select><br><br>
                     
                 <label>Fecha de Nacimiento: </label>

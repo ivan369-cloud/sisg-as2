@@ -16,7 +16,7 @@
             <li><a href="index.html">Salir</a></li>
             <li><a href="microservice/profile.php">Perfil de Usuario</a></li> 
             <li><a href="public/usuarios.html">Agregar Usuarios</a></li>
-            <li><a href="empleados/empleado.html">Empleados</a></li>    
+            <li><a href="empleados/Menuempleados.html">Empleados</a></li>    
             <li><a href="medicos/Menumedicos.html">Médicos</a></li>           
         </ul>
     </nav>
