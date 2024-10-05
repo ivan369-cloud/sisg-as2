@@ -28,23 +28,55 @@ if (isset($_POST["btnactualizar"])) {
         $observaciones = $conexion->real_escape_string($_POST["obspaciente"]);
         $id_medico = $conexion->real_escape_string($_POST["medicoencargado"]);
 
-        if (strlen($dpi) > 13) {
-            showAlert('El DPI no puede ser más largo de 13 caracteres.', 'danger');
-        } elseif (strlen($telefono) > 10) {
-            showAlert('El número de teléfono no puede ser más largo de 10 caracteres.', 'danger');
-        } else {
+        if (!preg_match('/^\d{1,13}$/', $dpi)) {
+            showAlert('El DPI debe contener solo números y ser máximo 13 caracteres.', 'danger');
+        } 
 
-            $sql_update = $conexion->query("UPDATE pacientes SET primer_nombre = '$primer_nombre', segundo_nombre = '$segundo_nombre', primer_apellido = '$primer_apellido', segundo_apellido = '$segundo_apellido', edad = '$edad', genero = '$genero', email = '$email', fecha_nacimiento = '$fecha_nac', direccion = '$direccion', telefono = '$telefono', observaciones = '$observaciones', dpi = '$dpi', id_medico = '$id_medico' WHERE id_paciente = $id");
+        elseif (!preg_match('/^\d{1,10}$/', $telefono)) {
+            showAlert('El número de teléfono debe contener solo números y ser máximo 10 caracteres.', 'danger');
+        } 
 
-            if ($sql_update) {
-                echo "<script>
-                        alert('Paciente actualizado con éxito.');
-                        window.location.href = 'URDpacientes.php'; // Cambia por la URL a la que quieras redirigir
-                      </script>";
-            } else {
-                $error = $conexion->error;
-                showAlert('Error al actualizar el paciente: ' . $error, 'danger');
+        else {
+            $fecha_actual = date('Y-m-d');
+            if ($fecha_nac > $fecha_actual) {
+                showAlert('La fecha de nacimiento no puede ser posterior a la fecha actual.', 'danger');
+                exit;
             }
+        }
+
+        $name_pattern = '/^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$/';
+        if (!preg_match($name_pattern, $primer_nombre) || 
+            !preg_match($name_pattern, $segundo_nombre) || 
+            !preg_match($name_pattern, $primer_apellido) || 
+            !preg_match($name_pattern, $segundo_apellido)) {
+            showAlert('Los nombres y apellidos deben contener solo letras.', 'danger');
+            exit;
+        }
+
+        $sql_update = $conexion->query("UPDATE pacientes SET 
+            primer_nombre = '$primer_nombre', 
+            segundo_nombre = '$segundo_nombre', 
+            primer_apellido = '$primer_apellido', 
+            segundo_apellido = '$segundo_apellido', 
+            edad = '$edad', 
+            genero = '$genero', 
+            email = '$email', 
+            fecha_nacimiento = '$fecha_nac', 
+            direccion = '$direccion', 
+            telefono = '$telefono', 
+            observaciones = '$observaciones', 
+            dpi = '$dpi', 
+            id_medico = '$id_medico' 
+            WHERE id_paciente = $id");
+
+        if ($sql_update) {
+            echo "<script>
+                    alert('Paciente actualizado con éxito.');
+                    window.location.href = 'URDpacientes.php'; // Cambia por la URL a la que quieras redirigir
+                  </script>";
+        } else {
+            $error = $conexion->error;
+            showAlert('Error al actualizar el paciente: ' . $error, 'danger');
         }
     } else {
         echo "ID no proporcionado.";

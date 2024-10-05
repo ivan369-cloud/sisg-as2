@@ -69,7 +69,7 @@
                     <td><?= $datos->observaciones ?></td>
                     <td><?= $datos->id_medico ?></td>
                     <td>
-                      <a href="EditarPac.php?id=<?= $datos->id_paciente ?>"><img src="Img/Icons/edit.png" alt="Editar" width="30" height="30"></a>
+                    <a href="EditarPac.php?id=<?= $datos->id_paciente ?>"><img src="Img/Icons/edit.png" alt="Editar" width="30" height="30"></a>
                        
                       <a href="DeletePac.php?id=<?= $datos->id_paciente ?>"><img src="Img/Icons/delete.png" alt="Eliminar" width="30" height="30"></a>
                     </td>
