@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-10-2024 a las 09:05:25
--- Versión del servidor: 8.0.39
--- Versión de PHP: 8.2.12
+-- Tiempo de generación: 05-10-2024 a las 09:57:03
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,13 +28,13 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `citas` (
-  `id_cita` int NOT NULL,
+  `id_cita` int(11) NOT NULL,
   `fecha` date NOT NULL,
   `hora` time NOT NULL,
-  `motivo` varchar(200) COLLATE utf8mb4_general_ci NOT NULL,
-  `estado` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `id_paciente` int NOT NULL,
-  `id_medico` int NOT NULL
+  `motivo` varchar(200) NOT NULL,
+  `estado` varchar(50) NOT NULL,
+  `id_paciente` int(11) NOT NULL,
+  `id_medico` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -54,15 +54,15 @@ INSERT INTO `citas` (`id_cita`, `fecha`, `hora`, `motivo`, `estado`, `id_pacient
 --
 
 CREATE TABLE `empleados` (
-  `id_empleado` int NOT NULL,
-  `dpi` varchar(20) COLLATE utf8mb4_general_ci NOT NULL,
-  `nombre` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `apellido` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `edad` int NOT NULL,
-  `sexo` varchar(10) COLLATE utf8mb4_general_ci NOT NULL,
-  `email` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `telefono` varchar(15) COLLATE utf8mb4_general_ci NOT NULL,
-  `area` varchar(50) COLLATE utf8mb4_general_ci NOT NULL
+  `id_empleado` int(11) NOT NULL,
+  `dpi` varchar(20) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `apellido` varchar(50) NOT NULL,
+  `edad` int(11) NOT NULL,
+  `sexo` varchar(10) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `telefono` varchar(15) NOT NULL,
+  `area` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -81,16 +81,16 @@ INSERT INTO `empleados` (`id_empleado`, `dpi`, `nombre`, `apellido`, `edad`, `se
 --
 
 CREATE TABLE `medicos` (
-  `ID_med` int NOT NULL,
-  `nombre_med` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `apellido_med` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `especialidad` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `colegiado` int NOT NULL,
-  `dpi` int NOT NULL,
-  `correo` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `telefono` int NOT NULL,
-  `direccion` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
-  `sexo` varchar(10) COLLATE utf8mb4_general_ci NOT NULL,
+  `ID_med` int(11) NOT NULL,
+  `nombre_med` varchar(50) NOT NULL,
+  `apellido_med` varchar(50) NOT NULL,
+  `especialidad` varchar(50) NOT NULL,
+  `colegiado` int(11) NOT NULL,
+  `dpi` int(11) NOT NULL,
+  `correo` varchar(50) NOT NULL,
+  `telefono` int(11) NOT NULL,
+  `direccion` varchar(100) NOT NULL,
+  `sexo` varchar(10) NOT NULL,
   `fecha_nacimiento` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -112,20 +112,20 @@ INSERT INTO `medicos` (`ID_med`, `nombre_med`, `apellido_med`, `especialidad`, `
 --
 
 CREATE TABLE `pacientes` (
-  `id_paciente` int NOT NULL,
-  `dpi` varchar(13) COLLATE utf8mb4_general_ci NOT NULL,
-  `primer_nombre` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `segundo_nombre` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `primer_apellido` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `segundo_apellido` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `edad` int NOT NULL,
-  `genero` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `email` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  `id_paciente` int(11) NOT NULL,
+  `dpi` varchar(13) NOT NULL,
+  `primer_nombre` varchar(50) NOT NULL,
+  `segundo_nombre` varchar(50) NOT NULL,
+  `primer_apellido` varchar(50) NOT NULL,
+  `segundo_apellido` varchar(50) NOT NULL,
+  `edad` int(11) NOT NULL,
+  `genero` varchar(10) NOT NULL,
+  `email` varchar(50) NOT NULL,
   `fecha_nacimiento` date NOT NULL,
-  `direccion` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `telefono` int NOT NULL,
-  `observaciones` varchar(200) COLLATE utf8mb4_general_ci NOT NULL,
-  `id_medico` int NOT NULL
+  `direccion` varchar(50) NOT NULL,
+  `telefono` int(11) NOT NULL,
+  `observaciones` varchar(200) NOT NULL,
+  `id_medico` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -143,11 +143,11 @@ INSERT INTO `pacientes` (`id_paciente`, `dpi`, `primer_nombre`, `segundo_nombre`
 --
 
 CREATE TABLE `receta` (
-  `id_receta` int NOT NULL,
-  `enfermedad` varchar(200) COLLATE utf8mb4_general_ci NOT NULL,
-  `receta` text COLLATE utf8mb4_general_ci NOT NULL,
-  `id_paciente` int NOT NULL,
-  `id_medico` int NOT NULL
+  `id_receta` int(11) NOT NULL,
+  `enfermedad` varchar(200) NOT NULL,
+  `receta` text NOT NULL,
+  `id_paciente` int(11) NOT NULL,
+  `id_medico` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -166,11 +166,11 @@ INSERT INTO `receta` (`id_receta`, `enfermedad`, `receta`, `id_paciente`, `id_me
 --
 
 CREATE TABLE `usuarios` (
-  `id_usuario` int NOT NULL,
-  `username` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `password` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `privilegio` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
-  `activo` int NOT NULL
+  `id_usuario` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `privilegio` varchar(50) NOT NULL,
+  `activo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -229,37 +229,37 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `citas`
 --
 ALTER TABLE `citas`
-  MODIFY `id_cita` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_cita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `empleados`
 --
 ALTER TABLE `empleados`
-  MODIFY `id_empleado` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_empleado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `medicos`
 --
 ALTER TABLE `medicos`
-  MODIFY `ID_med` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `ID_med` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `pacientes`
 --
 ALTER TABLE `pacientes`
-  MODIFY `id_paciente` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_paciente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de la tabla `receta`
 --
 ALTER TABLE `receta`
-  MODIFY `id_receta` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_receta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

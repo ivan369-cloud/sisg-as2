@@ -83,7 +83,11 @@
 
             </div>
 
-            <div class="franja"></div>
+            <div class="franja">
+                <a href="URDmedicos.php" id="Regreso">
+                    <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
+                </a>
+            </div>
     </form>
 </body>
 </html>
