@@ -13,13 +13,15 @@
     <!-- Menú de navegación -->
     <nav>
         <ul class="menu">
-            <li><a href="index.html">Salir</a></li>
-            <li><a href="microservice/profile.php">Perfil de Usuario</a></li> 
-            <li><a href="public/usuarios.html">Agregar Usuarios</a></li>
+            <li><a href="public/usuarios.html">Usuarios</a></li>
             <li><a href="empleados/Menuempleados.html">Empleados</a></li>    
-            <li><a href="medicos/Menumedicos.html">Médicos</a></li>           
+            <li><a href="medicos/Menumedicos.html">Médicos</a></li>            
+            <li><a href="pacientes/Menupacientes.html">Pacientes</a></li>        
+            <li><a href="01-citas/menu_citas.html">Citas</a></li>  
+            <li><a href="index.html">Cerrar Sesión</a></li>      
         </ul>
     </nav>
+    <img src="IMG/LogoSinFondo2.png" alt="SISG" style="width: 30%; vertical-align: middle; margin-right: 8px;">
    
 </body>
 </html>

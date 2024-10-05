@@ -77,12 +77,10 @@
                 <?php } ?>
             </tbody>
           </table>
-      </div>
-      <div class="franja">         
+      </div>    
         <a href="MenuPacientes.html" id="Regreso">
           <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
        </a>
-      </div>
     </div>
 </body>
 </html>
@@ -98,4 +96,17 @@
   body{
     font-family: 'Century Gothic';
   }
+  
+.imgRegreso {
+    position: absolute;  /* Posiciona el elemento de manera absoluta */
+    top: 10px;           /* Ajusta la distancia desde la parte superior */
+    left: 10px;          /* Ajusta la distancia desde el lado izquierdo */
+    width: 40px;         /* Ajusta el tamaño de la imagen si es necesario */
+    height: auto;
+}
+
+#Regreso {
+    text-decoration: none; /* Quita subrayado del enlace */
+}
+
 </style>

@@ -84,3 +84,15 @@ button:hover {
     background-color: #98c0f4;
     color: #000;
 }
+
+.imgRegreso {
+    position: absolute;  /* Posiciona el elemento de manera absoluta */
+    top: 5px;           /* Ajusta la distancia desde la parte superior */
+    left: 5px;          /* Ajusta la distancia desde el lado izquierdo */
+    width: 40px;         /* Ajusta el tamaño de la imagen si es necesario */
+    height: auto;
+}
+
+#Regreso {
+    text-decoration: none; /* Quita subrayado del enlace */
+}
