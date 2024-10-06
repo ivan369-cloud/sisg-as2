@@ -1,24 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Century Gothic', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Century Gothic';
+    background-color: #f0f0f5; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f5;
-    color: #333;
-    display: flex;
+    box-sizing: border-box;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+}
+
+/* Estilo del formulario */
+
+.container form {
+    background-color: white; /* Fondo blanco */
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 25px;
+    text-align: center;
 }
 
 h1 {
-    color: #007BFF;
+    color: #007BFF; /* Color del título */
     font-size: 2.5em;
-    margin-bottom: 2rem;
-    margin: 10px 0;
+    margin-bottom: 2.5rem;
 }
 
-input[type="text"], input[type="password"] {
+input, select {
     width: 95%;
     padding: 10px;
     margin: 10px 0;
@@ -27,7 +47,7 @@ input[type="text"], input[type="password"] {
     font-size: 16px;
 }
 
-input[type="submit"] {
+button, input[type="submit"] {
     background-color: #007BFF;
     color: white;
     border: none;
@@ -36,46 +56,15 @@ input[type="submit"] {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin: 10px 0;
+    margin: 20px 0;
     width: 100%;
 }
 
-input[type="submit"]:hover {
+button:hover, input[type="submit"]:hover {
     background-color: #005f73;
 }
 
-/* Estilos para el formulario */
-form {
-    background-color: white;
-    padding: 2rem;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* a {
-    display: block;
-    margin-top: 15px; 
-    color: #007BFF;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-a:hover {
-    color: #005f73;
-} */
-
-/* Estilos para el menú de navegación */
-
-/* .logo img{
-    height: 50px;
-    position: absolute;
-    left: 5px;
-    top: 70px;
-} */
-
+/* Estilo del menú de navegación */
 nav {
     background-color: #7dc4f7;
     padding: 10px 0;
@@ -92,10 +81,6 @@ nav {
     margin: 0;
     padding: 0;
 }
-/* 
-.menu img {
-    margin: 0 10px 5px;
-} */
 
 .menu li {
     margin: 0 15px 5px;
@@ -105,7 +90,7 @@ nav {
     color: #090088;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     transition: background 0.3s;
     font-size: 1em;
     display: flex;
@@ -118,7 +103,7 @@ nav {
     background-color: #615f5fb7;
     color: white;
     border-radius: 4px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
 }
 
 /* Responsividad */

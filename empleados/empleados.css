@@ -1,59 +1,54 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Century Gothic', sans-serif;
-    text-align: center;
-}
-
-form {
-    padding: 20px;
-    background-color: #381b1ba6;
-    margin: 0 auto; /* Centra horizontalmente */
-    width: 425px; /* Controla el ancho del formulario */
-    margin-top: 25px; /* Mayor espacio arriba para centrar verticalmente */
-    padding-top: 28px;
-    border-radius: 8px;
-    position: relative; /* Asegura que esté centrado dentro del contenedor */
-}
-
 body {
-    background-image: url(../IMG/fondo-sisg.jpg);
-    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-    background-position: center; /* Centra la imagen en el contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el alto de la ventana */
-    color: white; /* Color del texto en el cuerpo */
-    display: flex; /* Utiliza Flexbox para el layout */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    flex-direction: column; /* Asegura un flujo vertical */
-    margin: 0; /* Elimina el margen predeterminado del cuerpo */
-    padding: 0; /* Elimina el padding predeterminado del cuerpo */
-    box-sizing: border-box; /* Incluye el padding y border en el ancho y alto total del elemento */
+    background-color: #f0f4f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    /* background-image: url('img/fondo.jpg'); /* Ruta de la imagen 
+    background-size: cover; /* Para que la imagen cubra toda la página 
+    background-position: center; /* Para centrar la imagen 
+    background-repeat: no-repeat; Evitar que se repita la imagen */
 }
 
-.login-box {
-    background-image: url(../IMG/fondo-sisg.jpg);
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px); /* Centra la caja de login */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    width: 60%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
 }
 
+.form-container h1 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
 
 input, select {
-    width: calc(100% - 16px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    border: none;
+    border-bottom: 1.2px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 2%;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 0.5%;
+    margin-bottom: 1%;
+    width: 80%;
+    margin-left: 10%;
 }
 
 button {
-    padding: 4px 12px;
+    padding: 12px 20px;
     background-color: #007BFF;
     color: white;
     border: none;
@@ -61,6 +56,7 @@ button {
     cursor: pointer;
     margin: 5px;
     font-size: 1em;
+    margin-left: 10vh;
 }
 
 button:hover {
@@ -74,14 +70,28 @@ p {
     font-weight: bold;
 }
 
-h1{
-    color: white;
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    margin-left: 10%;
 }
 
-.btn-eliminar{    
-    background-color: red;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 7vh;
 }
 
-.btn-modificar{    
-    background-color: green;
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+}
+
+.pie{
+    height: 20%;
 }
