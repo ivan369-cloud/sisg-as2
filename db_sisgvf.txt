@@ -1,0 +1,103 @@
+create database db_sisgvf; 
+use db_sisgvf;
+
+CREATE TABLE `empleados` (
+  `id_empleado` int NOT NULL AUTO_INCREMENT,
+  `dpi` varchar(20) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `apellido` varchar(50) NOT NULL,
+  `edad` int NOT NULL,
+  `sexo` varchar(10) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `telefono` varchar(15) NOT NULL,
+  `area` varchar(50) NOT NULL,
+  PRIMARY KEY (`id_empleado`)
+);
+
+CREATE TABLE `medicos` (
+  `ID_med` int NOT NULL AUTO_INCREMENT,
+  `nombre_med` varchar(50) NOT NULL,
+  `apellido_med` varchar(50) NOT NULL,
+  `especialidad` varchar(50) NOT NULL,
+  `colegiado` int(5) NOT NULL,
+  `dpi` BIGINT(13) NOT NULL,
+  `correo` varchar(50) NOT NULL,
+  `telefono` int(8) NOT NULL,
+  `direccion` varchar(100) NOT NULL,
+  `sexo` varchar(10) NOT NULL,
+  `fecha_nacimiento` date NOT NULL,
+  PRIMARY KEY (`ID_med`)
+);
+
+CREATE TABLE `pacientes` (
+  `id_paciente` int NOT NULL AUTO_INCREMENT,
+  `dpi` varchar(13) NOT NULL,
+  `primer_nombre` varchar(50) NOT NULL,
+  `segundo_nombre` varchar(50) NOT NULL,
+  `primer_apellido` varchar(50) NOT NULL,
+  `segundo_apellido` varchar(50) NOT NULL,
+  `edad` int(11) NOT NULL,
+  `genero` varchar(10) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `fecha_nacimiento` date NOT NULL,
+  `direccion` varchar(50) NOT NULL,
+  `telefono` int(11) NOT NULL,
+  `observaciones` varchar(200) NOT NULL,
+  `id_medico` int(11) NOT NULL,
+  PRIMARY KEY (`id_paciente`)
+);
+
+CREATE TABLE estado_cita (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    descripcion VARCHAR(200) NOT NULL
+);
+
+-- Insertar datos en la tabla estado_cita
+INSERT INTO estado_cita (descripcion) VALUES 
+('Agendada'),
+('Cancelada'),
+('Atendida');
+
+-- Tabla de motivos de citas
+CREATE TABLE motivo (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    descripcion VARCHAR(200) NOT NULL
+);
+
+-- Insertar datos en la tabla motivo
+INSERT INTO motivo (descripcion) VALUES 
+('Consulta General'),
+('Revisión'),
+('Seguimiento');
+
+-- Tabla de horario
+CREATE TABLE `horario` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `hora_inicio` time NOT NULL,
+  `hora_fin` time NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+-- Datos para la tabla horario
+INSERT INTO horario (hora_inicio, hora_fin) VALUES
+('08:00:00', '09:00:00'),
+('09:00:00', '10:00:00'),
+('10:00:00', '11:00:00'),
+('11:00:00', '12:00:00'),
+('12:00:00', '13:00:00'),
+('14:00:00', '15:00:00'),
+('15:00:00', '16:00:00');
+
+CREATE TABLE `citas` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `id_paciente` int NOT NULL,
+  `id_medico` int NOT NULL,
+  `id_horario` int NOT NULL,
+  `fecha` date NOT NULL,
+  `id_estado` int NOT NULL,
+  `id_motivo` int NOT NULL,
+  `observaciones` text,
+  `creado_en` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `modificado_en` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`) 
+);
