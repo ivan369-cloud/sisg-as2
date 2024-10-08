@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "../db.php";
 
 $id = $_GET["id"];
 $sql_paciente = $conexion->query("SELECT * FROM pacientes WHERE id_paciente = $id");
@@ -36,7 +36,7 @@ if ($sql_medicos) {
         </font>
 
         <?php
-            include "db.php";
+            include "../db.php";
             $id = $_GET["id"];
             $sql = $conexion->query("SELECT * FROM pacientes WHERE id_paciente = $id");
             include "modificar_pacientes.php";

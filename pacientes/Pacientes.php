@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "../db.php";
 
 $query = "SELECT ID_med, nombre_med, apellido_med FROM medicos";
 $result = $conexion->query($query);

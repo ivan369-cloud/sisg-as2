@@ -1,35 +1,35 @@
 <?php
 //Desarrollo
-include('db.php');
+include('../db.php');
 //Produccion 
 // include('db_azure.php');
 
 // Consultar los pacientes
-$sql_pacientes = "SELECT id, nombre, apellidos FROM pacientes WHERE estado = 1";
-$result_pacientes = $conn->query($sql_pacientes);
+$sql_pacientes = "SELECT id_paciente, primer_nombre, primer_apellido FROM pacientes ";
+$result_pacientes = $conexion->query($sql_pacientes);
 if (!$result_pacientes) {
-    die("Error en consulta de pacientes: " . $conn->error);
+    die("Error en consulta de pacientes: " . $conexion->error);
 }
 
 // Consultar los médicos
-$sql_medicos = "SELECT id, nombre, apellidos FROM medicos WHERE estado = 1";
-$result_medicos = $conn->query($sql_medicos);
+$sql_medicos = "SELECT ID_med, nombre_med, apellido_med FROM medicos";
+$result_medicos = $conexion->query($sql_medicos);
 if (!$result_medicos) {
-    die("Error en consulta de médicos: " . $conn->error);
+    die("Error en consulta de médicos: " . $conexion->error);
 }
 
 // Consultar los horarios disponibles
 $sql_horarios = "SELECT id, hora_inicio, hora_fin FROM horario";
-$result_horarios = $conn->query($sql_horarios);
+$result_horarios = $conexion->query($sql_horarios);
 if (!$result_horarios) {
-    die("Error en consulta de horarios: " . $conn->error);
+    die("Error en consulta de horarios: " . $conexion->error);
 }
 
 // Consultar los motivos
 $sql_motivos = "SELECT id, descripcion FROM motivo";
-$result_motivos = $conn->query($sql_motivos);
+$result_motivos = $conexion->query($sql_motivos);
 if (!$result_motivos) {
-    die("Error en consulta de motivos: " . $conn->error);
+    die("Error en consulta de motivos: " . $conexion->error);
 }
 
 // Inicializar variables para mantener los valores seleccionados
@@ -47,33 +47,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id_motivo = $_POST['id_motivo'];  // Capturar el motivo seleccionado
 
     // Comprobar si el paciente, médico, horario y motivo existen
-    $sql_check = "SELECT * FROM pacientes WHERE id = '$id_paciente'";
-    $resultado_check = $conn->query($sql_check);
+    $sql_check = "SELECT * FROM pacientes WHERE id_paciente = '$id_paciente'";
+    $resultado_check = $conexion->query($sql_check);
     if ($resultado_check->num_rows === 0) {
         die("El paciente no existe.");
     }
 
-    $sql_check_medico = "SELECT * FROM medicos WHERE id = '$id_medico'";
-    $resultado_check_medico = $conn->query($sql_check_medico);
+    $sql_check_medico = "SELECT * FROM medicos WHERE ID_med = '$id_medico'";
+    $resultado_check_medico = $conexion->query($sql_check_medico);
     if ($resultado_check_medico->num_rows === 0) {
         die("El médico no existe.");
     }
 
     $sql_check_horario = "SELECT * FROM horario WHERE id = '$id_horario'";
-    $resultado_check_horario = $conn->query($sql_check_horario);
+    $resultado_check_horario = $conexion->query($sql_check_horario);
     if ($resultado_check_horario->num_rows === 0) {
         die("El horario no existe.");
     }
 
     $sql_check_motivo = "SELECT * FROM motivo WHERE id = '$id_motivo'";
-    $resultado_check_motivo = $conn->query($sql_check_motivo);
+    $resultado_check_motivo = $conexion->query($sql_check_motivo);
     if ($resultado_check_motivo->num_rows === 0) {
         die("El motivo no existe.");
     }
 
     // Comprobar si el horario ya está ocupado para ese médico en la misma fecha
     $sql_verificacion = "SELECT * FROM citas WHERE id_medico = '$id_medico' AND id_horario = '$id_horario' AND fecha = '$fecha'";
-    $resultado_verificacion = $conn->query($sql_verificacion);
+    $resultado_verificacion = $conexion->query($sql_verificacion);
 
     // Guardar los valores seleccionados
     $selected_paciente = $id_paciente;
@@ -89,11 +89,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql = "INSERT INTO citas (id_paciente, id_medico, id_horario, fecha, id_estado, id_motivo)
                 VALUES ('$id_paciente', '$id_medico', '$id_horario', '$fecha', 1, '$id_motivo')";
 
-        if ($conn->query($sql) === TRUE) {
+        if ($conexion->query($sql) === TRUE) {
             header("Location: menu_citas.html");
             exit(); // Asegúrate de salir después de redirigir
         } else {
-            die("Error: " . $sql . "<br>" . $conn->error); // Cambiado para mostrar errores
+            die("Error: " . $sql . "<br>" . $conexion->error); // Cambiado para mostrar errores
         }
     }
 }
@@ -119,8 +119,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <select id="id_paciente" name="id_paciente" class="form-control" required>
                     <option value="">Seleccione un paciente</option>
                     <?php while ($paciente = $result_pacientes->fetch_assoc()): ?>
-                        <option value="<?php echo $paciente['id']; ?>" <?php echo ($paciente['id'] == $selected_paciente) ? 'selected' : ''; ?>>
-                            <?php echo $paciente['nombre'] . ' ' . $paciente['apellidos']; ?>
+                        <option value="<?php echo $paciente['id_paciente']; ?>" <?php echo ($paciente['id_paciente'] == $selected_paciente) ? 'selected' : ''; ?>>
+                            <?php echo $paciente['primer_nombre'] . ' ' . $paciente['primer_apellido']; ?>
                         </option>
                     <?php endwhile; ?>
                 </select>
@@ -132,8 +132,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <select id="id_medico" name="id_medico" class="form-control" required>
                     <option value="">Seleccione un médico</option>
                     <?php while ($medico = $result_medicos->fetch_assoc()): ?>
-                        <option value="<?php echo $medico['id']; ?>" <?php echo ($medico['id'] == $selected_medico) ? 'selected' : ''; ?>>
-                            <?php echo $medico['nombre'] . ' ' . $medico['apellidos']; ?>
+                        <option value="<?php echo $medico['ID_med']; ?>" <?php echo ($medico['ID_med'] == $selected_medico) ? 'selected' : ''; ?>>
+                            <?php echo $medico['nombre_med'] . ' ' . $medico['apellido_med']; ?>
                         </option>
                     <?php endwhile; ?>
                 </select>

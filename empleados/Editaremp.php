@@ -17,7 +17,7 @@
                 </font>
 
                 <?php
-                    include "db.php";
+                    include "../db.php";
                     $id = $_GET["id"];
                     $sql = $conexion->query("SELECT * FROM empleados WHERE id_empleado = $id");
 

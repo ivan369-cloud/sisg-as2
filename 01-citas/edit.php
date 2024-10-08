@@ -1,5 +1,5 @@
 <?php
-include('db.php');
+include('../db.php');
 $id = $_GET['id'];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -11,33 +11,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Actualizar solo el horario, la fecha, el motivo y el estado
     $sql = "UPDATE citas SET id_horario = '$id_horario', fecha = '$fecha', id_motivo = '$id_motivo', id_estado = '$id_estado' WHERE id = $id";
 
-    if ($conn->query($sql) === TRUE) {
+    if ($conexion->query($sql) === TRUE) {
         header("Location: index.php");
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $conexion->error;
     }
 } else {
     // Obtener los datos de la cita incluyendo los nombres del paciente y médico
-    $sql = "SELECT citas.*, pacientes.nombre AS paciente_nombre, pacientes.apellidos AS paciente_apellidos,
-            medicos.nombre AS medico_nombre, medicos.apellidos AS medico_apellidos 
+    $sql = "SELECT citas.*, pacientes.primer_nombre AS paciente_nombre, pacientes.primer_apellido AS paciente_apellidos,
+            medicos.nombre_med AS medico_nombre, medicos.apellido_med AS medico_apellidos 
             FROM citas 
-            JOIN pacientes ON citas.id_paciente = pacientes.id 
-            JOIN medicos ON citas.id_medico = medicos.id 
+            JOIN pacientes ON citas.id_paciente = pacientes.id_paciente 
+            JOIN medicos ON citas.id_medico = medicos.ID_med
             WHERE citas.id = $id";
-    $result = $conn->query($sql);
+    $result = $conexion->query($sql);
     $cita = $result->fetch_assoc();
 
     // Obtener los horarios disponibles de la base de datos
     $sql_horarios = "SELECT * FROM horario";
-    $result_horarios = $conn->query($sql_horarios);
+    $result_horarios = $conexion->query($sql_horarios);
 
     // Obtener los motivos disponibles de la base de datos
     $sql_motivos = "SELECT * FROM motivo"; // Asumiendo que la tabla de motivos se llama 'motivos'
-    $result_motivos = $conn->query($sql_motivos);
+    $result_motivos = $conexion->query($sql_motivos);
 
     // Obtener los estados disponibles de la base de datos
     $sql_estados = "SELECT * FROM estado_cita"; // Asumiendo que la tabla de estados se llama 'estados'
-    $result_estados = $conn->query($sql_estados);
+    $result_estados = $conexion->query($sql_estados);
 }
 ?>
 

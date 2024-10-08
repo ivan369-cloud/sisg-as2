@@ -1,5 +1,5 @@
 <?php
-include "db.php"; 
+include "../db.php"; 
 
 if (!empty($_POST["dpi"]) && !empty($_POST["nombre"]) && !empty($_POST["apellido"]) &&
     !empty($_POST["edad"]) && !empty($_POST["sexo"]) && !empty($_POST["email"]) &&

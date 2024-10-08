@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "../db.php";
 
 function showAlert($message, $type = 'warning') {
     echo "<div class='alert alert-$type alert-dismissible fade show' role='alert'>

@@ -17,7 +17,7 @@
                 </font>
 
                 <?php
-                    include "db.php";
+                    include "../db.php";
                     $id = $_GET["id"];
                     $sql=$conexion->query(" select * from medicos where ID_med = $id ");
 

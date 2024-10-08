@@ -1,5 +1,5 @@
 <?php
-    include "db.php";
+    include "../db.php";
 
     // Si el formulario fue enviado, procesamos el POST
     if (isset($_POST["btnactualizar"])) {

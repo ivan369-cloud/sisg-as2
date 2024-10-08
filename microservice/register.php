@@ -3,34 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../01-citas/css/styles.css">
     <link rel="stylesheet" href="../css/microservice.css">
 </head>
 <body>
     <h1>Registro de Usuario</h1>
     <form action="register.php" method="POST">
-        <label for="username">Nombre de Usuario:</label>
-        <input type="text" id="username" name="username" required>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="usuario">Nombre de Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
         
         <label for="password">Contraseña:</label>
         <input type="password" id="password" name="password" required>
         
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="id_cargo">Cargo:</label>
+        <select id="id_cargo" name="id_cargo" required>
+            <option value="">Cargando cargos...</option>
+        </select>
         
-        <button type="submit">Registrar</button>
-        <a href="login.html">Iniciar Sesion</a>
+        <button type="submit">Registrar</button>        
     </form>
+
+    <script>
+        // Llamada AJAX para obtener los cargos desde el microservicio
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('http://localhost:3000/cargos')
+                .then(response => response.json())
+                .then(data => {
+                    const cargoSelect = document.getElementById('id_cargo');
+                    cargoSelect.innerHTML = ''; // Limpiar opciones previas
+                    if (data.length > 0) {
+                        data.forEach(cargo => {
+                            const option = document.createElement('option');
+                            option.value = cargo.id;
+                            option.textContent = cargo.cargos;
+                            cargoSelect.appendChild(option);
+                        });
+                    } else {
+                        const option = document.createElement('option');
+                        option.value = '';
+                        option.textContent = 'No hay cargos disponibles';
+                        cargoSelect.appendChild(option);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error al cargar los cargos:', error);
+                    const cargoSelect = document.getElementById('id_cargo');
+                    cargoSelect.innerHTML = '<option value="">Error al cargar cargos</option>';
+                });
+        });
+    </script>
 
     <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $username = $_POST['username'];
+        $nombre = $_POST['nombre'];
+        $usuario = $_POST['usuario'];
         $password = $_POST['password'];
-        $email = $_POST['email'];
+        $id_cargo = intval($_POST['id_cargo']); // Convertimos a entero
 
         $data = [
-            'username' => $username,
-            'password' => $password,
-            'email' => $email
+            'nombre' => $nombre,
+            'usuario' => $usuario,
+            'contraseña' => $password,
+            'id_cargo' => $id_cargo
         ];
 
         $options = [
@@ -42,14 +79,15 @@
         ];
 
         $context = stream_context_create($options);
-        $result = file_get_contents('https://microservice-users-production-81bc.up.railway.app/register', false, $context);
-
+        $result = file_get_contents('http://localhost:3000/register', false, $context);
         if ($result === FALSE) {
             echo "<p>Error al registrar el usuario.</p>";
         } else {
-            echo "<p>Usuario registrado exitosamente.</p>";
+            // echo "<p>Usuario registrado exitosamente.</p>";
+            header("Location: ../user/menu_users.html");
         }
     }
     ?>
 </body>
 </html>
+

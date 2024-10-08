@@ -1,13 +1,18 @@
-/* Estilos para el nombre del usuario */
 .nombre-usuario {
-    position: absolute;
-    top: 45px; /* Espaciado de 2 centímetros desde la parte superior (20px) */
-    right: 10px; /* Espaciado desde la derecha */
-    font-size: 15px; /* Tamaño de la fuente */
-    font-weight: bold; /* Negrita */
-    color: #f3f4f7; /* Color del texto */
-    background-color: rgba(72, 121, 184, 0.8); /* Fondo semi-transparente */
-    padding: 5px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    z-index: 1000; /* Asegúrate de que esté encima del menú */
+    position: fixed; /* Fija la posición en la pantalla */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde el lado derecho */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Para colocar el ícono encima del texto */
+    text-align: center;
+}
+
+.nombre-usuario i {
+    font-size: 24px; /* Tamaño del ícono */
+    margin-bottom: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.nombre-usuario p {
+    margin: 0;
 }

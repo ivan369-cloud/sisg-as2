@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "../db.php";
 
 if (!empty($_POST["nombre"]) && !empty($_POST["apellido"]) && !empty($_POST["especialidad"]) && 
     !empty($_POST["colegiado"]) && !empty($_POST["dpimedico"]) && !empty($_POST["correomedico"]) &&
