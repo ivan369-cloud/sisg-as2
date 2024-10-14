@@ -86,7 +86,7 @@
             <td><?= $datos->id_medico ?></td>
             <td class="action-icons">
               <a href="EditarPac.php?id=<?= $datos->id_paciente ?>"><img src="Img/Icons/edit.png" alt="Editar" width="30" height="30"></a>
-              <a href="DeletePac.php?id=<?= $datos->id_paciente ?>" onclick="return confirm('¿Desea eliminar el registro?')">
+              <a href="#" onclick="confirmDelete(<?= $datos->id_paciente ?>)">
                 <img src="Img/Icons/delete.png" alt="Eliminar" width="30" height="30">
               </a>
             </td>
@@ -95,9 +95,40 @@
       </tbody>
     </table>
   </div>    
-  <a href="MenuPacientes.html" id="Regreso">
+  <a href="menu_paciente.php" id="Regreso">
     <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
   </a>
 </div>
+
+<!-- Modal de confirmación -->
+<div id="confirmModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Contenido del modal -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Confirmación de Eliminación</h4>
+      </div>
+      <div class="modal-body">
+        <p>¿Está seguro de que desea eliminar este registro?</p>
+      </div>
+      <div class="modal-footer">
+        <a id="confirmDeleteBtn" class="btn btn-danger">Confirmar</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function confirmDelete(id) {
+    // Configura el enlace del botón de confirmación con el ID del paciente
+    document.getElementById("confirmDeleteBtn").href = "DeletePac.php?id=" + id;
+    // Muestra el modal de confirmación
+    $('#confirmModal').modal('show');
+  }
+</script>
+
 </body>
 </html>
+

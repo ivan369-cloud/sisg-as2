@@ -1,5 +1,5 @@
 <?php
-include "../db.php";
+include "db.php";
 
 function showAlert($message, $type = 'warning') {
     echo "<div class='alert alert-$type alert-dismissible fade show' role='alert'>
@@ -27,16 +27,31 @@ if (!empty($_POST["dpi"]) && !empty($_POST["primer_nombre"]) && !empty($_POST["s
     $fecha_nac = $_POST["fecha_nac"];
     $direccion = $_POST["direpaciente"];
     $telefono = $_POST["telepaciente"];
-    $telefono = preg_replace('/[^0-9]/', '', $telefono);
     $observaciones = $_POST["obspaciente"];
     $medico = $_POST["medicoencargado"];
 
-    if (strlen($dpi) > 13) {
-        showAlert('El DPI no puede ser más largo de 13 caracteres.', 'danger');
+    if (!preg_match('/^\d{1,13}$/', $dpi)) {
+        showAlert('El DPI debe contener solo números y ser máximo 13 caracteres.', 'danger');
         exit;
     }
-    if (strlen($telefono) > 10) {
-        showAlert('El número de teléfono no puede ser más largo de 10 caracteres.', 'danger');
+
+    if (!preg_match('/^\d{1,10}$/', $telefono)) {
+        showAlert('El número de teléfono debe contener solo números y ser máximo 10 caracteres.', 'danger');
+        exit;
+    }
+
+    $fecha_actual = date('Y-m-d');
+    if ($fecha_nac > $fecha_actual) {
+        showAlert('La fecha de nacimiento no puede ser posterior a la fecha actual.', 'danger');
+        exit;
+    }
+
+    $name_pattern = '/^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$/';
+    if (!preg_match($name_pattern, $primer_nombre) || 
+        !preg_match($name_pattern, $segundo_nombre) || 
+        !preg_match($name_pattern, $primer_apellido) || 
+        !preg_match($name_pattern, $segundo_apellido)) {
+        showAlert('Los nombres y apellidos deben contener solo letras.', 'danger');
         exit;
     }
 

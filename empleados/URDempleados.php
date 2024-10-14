@@ -72,7 +72,7 @@
             <td><?= $datos->area ?></td>
             <td>
               <a href="Editaremp.php?id=<?= $datos->id_empleado ?>"><img src="Img/Icons/edit.png" alt="Editar" width="30" height="30"></a>
-              <a href="Deleteemp.php?id=<?= $datos->id_empleado ?>" onclick="return confirm('¿Desea eliminar el registro?')">
+              <a href="#" data-toggle="modal" data-target="#confirmModal" onclick="setDeleteUrl('Deleteemp.php?id=<?= $datos->id_empleado ?>')">
                 <img src="Img/Icons/delete.png" alt="Eliminar" width="30" height="30">
               </a>
             </td>
@@ -82,22 +82,36 @@
     </table>
   </div>
   
-  <a href="Menuempleados.html" id="Regreso">
+  <a href="Menuempleados.php" id="Regreso">
     <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
   </a>
 </div>
+
+<!-- Modal de confirmación -->
+<div id="confirmModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Contenido del modal-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Confirmación de Eliminación</h4>
+      </div>
+      <div class="modal-body">
+        <p>¿Está seguro que desea eliminar este registro?</p>
+      </div>
+      <div class="modal-footer">
+        <a id="deleteButton" class="btn btn-danger">Eliminar</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function setDeleteUrl(url) {
+    document.getElementById('deleteButton').setAttribute('href', url);
+  }
+</script>
 </body>
 </html>
-
-<style>
-  h1 {
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    padding: 3rem;
-  }
-  body {
-    font-family: 'Century Gothic';
-  }
-</style>
 

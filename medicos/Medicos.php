@@ -66,7 +66,7 @@
             <div id="alert-container"></div> <!-- Contenedor para las alertas -->
 
             <div class="franja">
-                <a href="Menumedicos.html" id="Regreso">
+                <a href="menu_medico.php" id="Regreso">
                     <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
                 </a>
             </div>

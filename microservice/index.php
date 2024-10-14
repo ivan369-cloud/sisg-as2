@@ -44,19 +44,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Decodificar la respuesta JSON
         $responseData = json_decode($response, true);
 
-        // Verificar si el campo 'nombre' está presente en la respuesta
-        if (isset($responseData['id_cargo']) && isset($responseData['usuario'])) {
+        // Verificar si los campos 'id', 'id_cargo' y 'usuario' están presentes en la respuesta
+        if (isset($responseData['id'], $responseData['id_cargo'], $responseData['usuario'])) {
+            $idUsuario = $responseData['id'];
             $idCargo = $responseData['id_cargo'];
             $nombreUsuario = $responseData['usuario'];
 
-            // Almacenar el nombre del usuario en la sesión
+            // Almacenar el nombre e ID del usuario en la sesión
             $_SESSION['nombreUsuario'] = $nombreUsuario;
+            $_SESSION['idUsuario'] = $idUsuario;
+            $_SESSION['idCargo'] = $idCargo;
 
             // Redirigir según el rol
             if ($idCargo == 1 || $idCargo == 2) {
                 header("Location: ../admin.php");
             } elseif ($idCargo == 3) {
-                header("Location: ../empleado.php");
+                header("Location: ../vista_empleado.php");
+            } elseif ($idCargo == 4) {
+                header("Location: ../vista_medico.php");
             } else {
                 echo "<p>Rol no autorizado</p>";
             }
@@ -70,3 +75,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     curl_close($ch);
 }
 ?>
+

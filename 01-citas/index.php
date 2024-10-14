@@ -70,7 +70,7 @@ $result = $conexion->query($sql);
                     <td><?php echo $row['fecha']; ?></td>
                     <td>
                         <a href="edit.php?id=<?php echo $row['id']; ?>"><img src="Img/Icons/edit.png" alt="Editar" width="30" height="30"></a>
-                        <a href="delete.php?id=<?php echo $row['id']; ?>" onclick="return confirm('¿Desea eliminar el registro?')">
+                        <a href="#" onclick="confirmDelete(<?php echo $row['id']; ?>)">
                             <img src="Img/Icons/delete.png" alt="Eliminar" width="30" height="30">
                         </a>
                     </td>
@@ -80,9 +80,39 @@ $result = $conexion->query($sql);
         </table>
     </div>
     
-    <a href="menu_citas.html" class="btn-regresar">
+    <a href="menu_citas.php" class="btn-regresar">
         <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
     </a>
+
+    <!-- Modal de confirmación -->
+    <div id="confirmModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Contenido del modal -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Confirmación de Eliminación</h4>
+                </div>
+                <div class="modal-body">
+                    <p>¿Está seguro de que desea eliminar esta cita?</p>
+                </div>
+                <div class="modal-footer">
+                    <a id="confirmDeleteBtn" class="btn btn-danger">Confirmar</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function confirmDelete(id) {
+            // Configura el enlace del botón de confirmación con el ID de la cita
+            document.getElementById("confirmDeleteBtn").href = "delete.php?id=" + id;
+            // Muestra el modal de confirmación
+            $('#confirmModal').modal('show');
+        }
+    </script>
 </body>
 </html>
+
 

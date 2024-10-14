@@ -92,7 +92,7 @@ if ($result) {
             <div id="alert-container"></div>
 
             <div class="franja">         
-                <a href="MenuPacientes.html" id="Regreso">
+                <a href="menu_paciente.php" id="Regreso">
                     <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
                 </a>
             </div>

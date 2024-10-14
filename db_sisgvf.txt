@@ -101,3 +101,20 @@ CREATE TABLE `citas` (
   `modificado_en` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) 
 );
+
+
+CREATE TABLE `cargo` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `cargos` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+
+CREATE TABLE `usuarios` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(250) NOT NULL,
+  `usuario` varchar(250) NOT NULL,
+  `contraseña` varchar(250) NOT NULL,
+  `id_cargo` int NOT NULL,
+  PRIMARY KEY (`id`)
+)
+

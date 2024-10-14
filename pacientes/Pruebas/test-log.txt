@@ -1,0 +1,834 @@
+[2024-10-05T05:30:39.205Z] Navegación a la página exitosa.
+[2024-10-05T05:30:39.280Z] Campo DPI disponible.
+[2024-10-05T05:30:39.548Z] Formulario llenado exitosamente.
+[2024-10-05T05:30:39.790Z] Formulario enviado.
+[2024-10-05T05:30:39.791Z] Error durante la ejecución del test: TypeError: page.waitForTimeout is not a function
+[2024-10-05T05:31:42.719Z] Navegación a la página exitosa.
+[2024-10-05T05:31:42.804Z] Campo DPI disponible.
+[2024-10-05T05:31:43.131Z] Formulario llenado exitosamente.
+[2024-10-05T05:31:43.313Z] Formulario enviado.
+[2024-10-05T05:31:43.317Z] Error durante la ejecución del test: TypeError: page.waitForTimeout is not a function
+[2024-10-05T05:32:20.226Z] Navegación a la página exitosa.
+[2024-10-05T05:32:20.322Z] Campo DPI disponible.
+[2024-10-05T05:32:20.591Z] Formulario llenado exitosamente.
+[2024-10-05T05:32:23.345Z] Formulario enviado.
+[2024-10-05T05:32:23.355Z] Error durante la ejecución del test: TypeError: page.waitForTimeout is not a function
+[2024-10-05T05:33:34.707Z] Navegación a la página exitosa.
+[2024-10-05T05:33:34.781Z] Campo DPI disponible.
+[2024-10-05T05:33:35.172Z] Formulario llenado exitosamente.
+[2024-10-05T05:33:35.328Z] Formulario enviado.
+[2024-10-05T05:33:35.329Z] Error durante la ejecución del test: TypeError: page.waitForTimeout is not a function
+[2024-10-05T05:35:42.973Z] Navegación a la página exitosa.
+[2024-10-05T05:35:43.000Z] Error durante la ejecución del test: Error: No element found for selector: input[name="dpi"]
+[2024-10-05T05:35:59.919Z] Navegación a la página exitosa.
+[2024-10-05T05:35:59.985Z] Campo DPI disponible.
+[2024-10-05T05:36:00.288Z] Formulario llenado exitosamente.
+[2024-10-05T05:36:00.506Z] Formulario enviado.
+[2024-10-05T05:36:02.519Z] Test Failed: No se encontró el texto "Registro exitoso".
+[2024-10-05T05:36:02.653Z] Navegador cerrado.
+[2024-10-05T05:36:36.352Z] Navegación a la página exitosa.
+[2024-10-05T05:36:36.418Z] Campo DPI disponible.
+[2024-10-05T05:36:36.755Z] Formulario llenado exitosamente.
+[2024-10-05T05:36:36.966Z] Formulario enviado.
+[2024-10-05T05:36:38.970Z] Test Failed: No se encontró el texto "Registro exitoso".
+[2024-10-05T05:36:39.097Z] Navegador cerrado.
+[2024-10-05T05:37:54.839Z] Navegación a la página exitosa.
+[2024-10-05T05:37:54.920Z] Campo DPI disponible.
+[2024-10-05T05:37:55.211Z] Formulario llenado exitosamente.
+[2024-10-05T05:37:55.426Z] Formulario enviado.
+[2024-10-05T05:37:55.438Z] Dialogo detectado: Paciente ingresado con éxito.
+[2024-10-05T05:37:55.450Z] Dialogo aceptado.
+[2024-10-05T05:37:57.430Z] Error durante la ejecución del test: TypeError: Cannot read properties of null (reading 'textContent')
+[2024-10-05T05:39:55.506Z] Navegación a la página exitosa.
+[2024-10-05T05:39:55.529Z] Error durante la ejecución del test: Error: No element found for selector: input[name="dpi"]
+[2024-10-05T05:40:10.301Z] Navegación a la página exitosa.
+[2024-10-05T05:40:10.375Z] Campo DPI disponible.
+[2024-10-05T05:40:10.696Z] Formulario llenado exitosamente.
+[2024-10-05T05:40:10.898Z] Formulario enviado.
+[2024-10-05T05:40:10.922Z] Dialogo detectado: Paciente ingresado con éxito.
+[2024-10-05T05:40:10.932Z] Dialogo aceptado.
+[2024-10-05T05:41:00.596Z] Navegación a la página exitosa.
+[2024-10-05T05:41:00.676Z] Campo DPI disponible.
+[2024-10-05T05:41:01.031Z] Formulario llenado exitosamente.
+[2024-10-05T05:41:01.217Z] Formulario enviado.
+[2024-10-05T05:41:01.220Z] Dialogo detectado: Paciente ingresado con éxito.
+[2024-10-05T05:41:01.233Z] Dialogo aceptado.
+[2024-10-05T05:42:05.739Z] Navegación a la página exitosa.
+[2024-10-05T05:42:05.762Z] Error durante la ejecución del test: Error: No element found for selector: input[name="dpi"]
+[2024-10-05T05:42:28.342Z] Navegación a la página exitosa.
+[2024-10-05T05:42:28.407Z] Campo DPI disponible.
+[2024-10-05T05:42:28.692Z] Formulario llenado exitosamente.
+[2024-10-05T05:42:28.931Z] Formulario enviado.
+[2024-10-05T05:42:28.931Z] Error durante la ejecución del test: TypeError: page.waitForTimeout is not a function
+[2024-10-05T05:42:28.941Z] Dialogo detectado: Paciente ingresado con éxito.
+[2024-10-05T05:42:28.947Z] Dialogo aceptado.
+[2024-10-05T05:42:28.971Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-05T05:42:35.525Z] Dialogo detectado: Paciente eliminado con éxito.
+[2024-10-05T05:42:35.531Z] Dialogo aceptado.
+[2024-10-05T05:42:38.901Z] Dialogo detectado: Paciente eliminado con éxito.
+[2024-10-05T05:42:38.905Z] Dialogo aceptado.
+[2024-10-05T05:42:42.451Z] Dialogo detectado: Paciente eliminado con éxito.
+[2024-10-05T05:42:42.455Z] Dialogo aceptado.
+[2024-10-05T05:42:45.653Z] Dialogo detectado: Paciente eliminado con éxito.
+[2024-10-05T05:42:45.655Z] Dialogo aceptado.
+[2024-10-05T05:42:48.554Z] Dialogo detectado: Paciente eliminado con éxito.
+[2024-10-05T05:42:48.559Z] Dialogo aceptado.
+[2024-10-05T05:42:50.922Z] Dialogo detectado: Paciente eliminado con éxito.
+[2024-10-05T05:42:50.924Z] Dialogo aceptado.
+[2024-10-05T05:47:39.047Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T05:47:39.066Z] Error durante la ejecución del test: Error: No element found for selector: table tbody tr:first-child a[title="Editar"]
+[2024-10-05T05:54:56.562Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T05:54:56.683Z] Navegación a la página de edición de paciente.
+[2024-10-05T05:54:56.686Z] Respuesta del servidor: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/registros.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Editar Pacientes</title>
+</head>
+<body>
+
+<form id="form-medicos" method="POST" action="">
+    <div class="img"></div>
+    <div class="text">
+        <font face="snubnose demo">
+            <h1>¡Editar Pacientes!</h1>
+        </font>
+
+                            <input type="hidden" name="id" value="7">
+
+                    <label>DPI: </label>
+                    <input type="number" placeholder="Ingrese DPI" name="dpi" value="1231231231"><br><br>
+
+                    <label>Primer Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="primer_nombre" value="Axeliño"><br><br>
+
+                    <label>Segundo Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="segundo_nombre" value="lexA"><br><br>
+
+                    <label>Primer Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="primer_apellido" value="Alvariño"><br><br>
+
+                    <label>Segundo Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="segundo_apellido" value="odaravlA"><br><br>
+
+                    <label>Edad: </label>
+                    <input type="number" placeholder="Ingrese la edad" name="edad" value="22"><br><br>
+
+                    <label for="genero">Genero:</label>
+                    <select id="genero" name="genero">
+                        <option value="Masculino" selected>Masculino</option>
+                        <option value="Femenino" >Femenino</option>
+                    </select><br><br>
+
+                    <label>Email: </label>
+                    <input type="email" placeholder="Ingrese el correo" name="correopaciente" value="axel@a"><br><br>
+
+                    <label>Fecha de Nacimiento: </label>
+                    <input type="date" name="fecha_nac" value="2024-10-02"><br><br>
+
+                    <label>Dirección: </label>
+                    <input type="text" placeholder="Ingrese dirección" name="direpaciente" value="sadadadasdads"><br><br>
+
+                    <label>Teléfono: </label>
+                    <input type="tel" placeholder="Ingrese Teléfono" name="telepaciente" value="11231312"><br> <br>
+
+                    <label>Observaciones: </label>
+                    <input type="text" placeholder="Ingrese observaciones" name="obspaciente" value="Guapo, "><br><br>
+
+                    <label>Médico Encargado: </label>
+                    <select name="medicoencargado">
+                        <option value="">Seleccione un médico</option>
+                                                    <option value="1" >
+                                1 Lucia Morales                            </option>
+                                                    <option value="3" selected>
+                                3 Maria Juana Perez Sagastume                            </option>
+                                                    <option value="6" >
+                                6 Axel Alvarado                            </option>
+                                                    <option value="7" >
+                                7 Lester Lopez                            </option>
+                                                    <option value="8" >
+                                8 Ivan Perez                            </option>
+                                            </select><br><br>
+
+                    <button type="submit" name="btnactualizar" value="ok">Actualizar</button>
+                    </div>
+
+    <div id="alert-container"></div>
+
+    <div class="franja">
+        <a href="URDpacientes.php" id="Regreso">
+            <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
+        </a>
+    </div>
+</form>
+</body>
+</html>
+[2024-10-05T05:54:57.604Z] Formulario de edición enviado.
+[2024-10-05T05:54:59.524Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-05T05:54:59.528Z] El paciente fue editado exitosamente.
+[2024-10-05T05:54:59.661Z] Navegador cerrado.
+[2024-10-05T06:04:40.728Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:05:10.761Z] Error durante la ejecución del test: TimeoutError: Waiting for selector `table tbody tr td:contains(123456789) + td + td + td + td + td + td + td + td + td + td + td + td + td a` failed: Waiting failed: 30000ms exceeded
+[2024-10-05T06:10:28.994Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:10:29.024Z] Error durante la ejecución del test: DOMException: SyntaxError: Failed to execute 'querySelector' on 'Document': 'table tbody tr td:nth-child(2):contains("123456789") + td a' is not a valid selector.
+[2024-10-05T06:11:39.414Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:11:39.467Z] No se encontró el botón de editar para el paciente con DPI: 123456789
+[2024-10-05T06:14:07.608Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:14:07.664Z] No se encontró el botón de editar para el paciente con DPI: 123456789
+[2024-10-05T06:14:39.249Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:14:39.297Z] No se encontró el botón de editar para el paciente con DPI: 123123122412
+[2024-10-05T06:17:25.008Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:17:25.099Z] Se hizo clic en el botón de editar para el paciente con DPI: 123456789
+[2024-10-05T06:17:25.155Z] Respuesta del servidor: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/registros.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Editar Pacientes</title>
+</head>
+<body>
+
+<form id="form-medicos" method="POST" action="">
+    <div class="img"></div>
+    <div class="text">
+        <font face="snubnose demo">
+            <h1>¡Editar Pacientes!</h1>
+        </font>
+
+                            <input type="hidden" name="id" value="17">
+
+                    <label>DPI: </label>
+                    <input type="number" placeholder="Ingrese DPI" name="dpi" value="123456789"><br><br>
+
+                    <label>Primer Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="primer_nombre" value="Juan"><br><br>
+
+                    <label>Segundo Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="segundo_nombre" value="Carlos"><br><br>
+
+                    <label>Primer Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="primer_apellido" value="Perez"><br><br>
+
+                    <label>Segundo Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="segundo_apellido" value="Lopez"><br><br>
+
+                    <label>Edad: </label>
+                    <input type="number" placeholder="Ingrese la edad" name="edad" value="25"><br><br>
+
+                    <label for="genero">Genero:</label>
+                    <select id="genero" name="genero">
+                        <option value="Masculino" selected>Masculino</option>
+                        <option value="Femenino" >Femenino</option>
+                    </select><br><br>
+
+                    <label>Email: </label>
+                    <input type="email" placeholder="Ingrese el correo" name="correopaciente" value="juan@example.com"><br><br>
+
+                    <label>Fecha de Nacimiento: </label>
+                    <input type="date" name="fecha_nac" value="2002-06-26"><br><br>
+
+                    <label>Dirección: </label>
+                    <input type="text" placeholder="Ingrese dirección" name="direpaciente" value="Calle Falsa 123"><br><br>
+
+                    <label>Teléfono: </label>
+                    <input type="tel" placeholder="Ingrese Teléfono" name="telepaciente" value="12345678"><br> <br>
+
+                    <label>Observaciones: </label>
+                    <input type="text" placeholder="Ingrese observaciones" name="obspaciente" value="Observaciones aquí"><br><br>
+
+                    <label>Médico Encargado: </label>
+                    <select name="medicoencargado">
+                        <option value="">Seleccione un médico</option>
+                                                    <option value="1" selected>
+                                1 Lucia Morales                            </option>
+                                                    <option value="3" >
+                                3 Maria Juana Perez Sagastume                            </option>
+                                                    <option value="6" >
+                                6 Axel Alvarado                            </option>
+                                                    <option value="7" >
+                                7 Lester Lopez                            </option>
+                                                    <option value="8" >
+                                8 Ivan Perez                            </option>
+                                            </select><br><br>
+
+                    <button type="submit" name="btnactualizar" value="ok">Actualizar</button>
+                    </div>
+
+    <div id="alert-container"></div>
+
+    <div class="franja">
+        <a href="URDpacientes.php" id="Regreso">
+            <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
+        </a>
+    </div>
+</form>
+</body>
+</html>
+[2024-10-05T06:17:25.602Z] Navegación a la página de edición de paciente.
+[2024-10-05T06:17:28.929Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-05T06:17:28.932Z] Formulario de edición enviado.
+[2024-10-05T06:17:28.947Z] El paciente fue editado exitosamente.
+[2024-10-05T06:17:29.090Z] Navegador cerrado.
+[2024-10-05T06:20:07.013Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:20:07.075Z] Se hizo clic en el botón de editar para el paciente con DPI: 123456789
+[2024-10-05T06:20:07.123Z] Respuesta del servidor: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/registros.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Editar Pacientes</title>
+</head>
+<body>
+
+<form id="form-medicos" method="POST" action="">
+    <div class="img"></div>
+    <div class="text">
+        <font face="snubnose demo">
+            <h1>¡Editar Pacientes!</h1>
+        </font>
+
+                            <input type="hidden" name="id" value="17">
+
+                    <label>DPI: </label>
+                    <input type="number" placeholder="Ingrese DPI" name="dpi" value="123456789"><br><br>
+
+                    <label>Primer Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="primer_nombre" value="NuevoNombre"><br><br>
+
+                    <label>Segundo Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="segundo_nombre" value="NuevoSegundoNombreCarlos"><br><br>
+
+                    <label>Primer Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="primer_apellido" value="Perez"><br><br>
+
+                    <label>Segundo Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="segundo_apellido" value="Lopez"><br><br>
+
+                    <label>Edad: </label>
+                    <input type="number" placeholder="Ingrese la edad" name="edad" value="25"><br><br>
+
+                    <label for="genero">Genero:</label>
+                    <select id="genero" name="genero">
+                        <option value="Masculino" selected>Masculino</option>
+                        <option value="Femenino" >Femenino</option>
+                    </select><br><br>
+
+                    <label>Email: </label>
+                    <input type="email" placeholder="Ingrese el correo" name="correopaciente" value="juan@example.com"><br><br>
+
+                    <label>Fecha de Nacimiento: </label>
+                    <input type="date" name="fecha_nac" value="2002-06-26"><br><br>
+
+                    <label>Dirección: </label>
+                    <input type="text" placeholder="Ingrese dirección" name="direpaciente" value="Calle Falsa 123"><br><br>
+
+                    <label>Teléfono: </label>
+                    <input type="tel" placeholder="Ingrese Teléfono" name="telepaciente" value="12345678"><br> <br>
+
+                    <label>Observaciones: </label>
+                    <input type="text" placeholder="Ingrese observaciones" name="obspaciente" value="Observaciones aquí"><br><br>
+
+                    <label>Médico Encargado: </label>
+                    <select name="medicoencargado">
+                        <option value="">Seleccione un médico</option>
+                                                    <option value="1" selected>
+                                1 Lucia Morales                            </option>
+                                                    <option value="3" >
+                                3 Maria Juana Perez Sagastume                            </option>
+                                                    <option value="6" >
+                                6 Axel Alvarado                            </option>
+                                                    <option value="7" >
+                                7 Lester Lopez                            </option>
+                                                    <option value="8" >
+                                8 Ivan Perez                            </option>
+                                            </select><br><br>
+
+                    <button type="submit" name="btnactualizar" value="ok">Actualizar</button>
+                    </div>
+
+    <div id="alert-container"></div>
+
+    <div class="franja">
+        <a href="URDpacientes.php" id="Regreso">
+            <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
+        </a>
+    </div>
+</form>
+</body>
+</html>
+[2024-10-05T06:20:07.586Z] Navegación a la página de edición de paciente.
+[2024-10-05T06:20:10.285Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-05T06:20:10.289Z] Formulario de edición enviado.
+[2024-10-05T06:20:10.306Z] El paciente fue editado exitosamente.
+[2024-10-05T06:20:10.455Z] Navegador cerrado.
+[2024-10-05T06:29:01.509Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:29:31.543Z] Error durante la ejecución del test: TimeoutError: Waiting for selector `table tbody tr td:nth-child(2):contains("123456789") + td a:nth-child(2)` failed: Waiting failed: 30000ms exceeded
+[2024-10-05T06:30:52.557Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:31:22.591Z] Error durante la ejecución del test: TimeoutError: Waiting for selector `table tbody tr td:nth-child(2):contains("123456789") + td a:nth-child(2)` failed: Waiting failed: 30000ms exceeded
+[2024-10-05T06:32:50.748Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:33:20.779Z] Error durante la ejecución del test: TimeoutError: Waiting for selector `table tbody tr td:nth-child(2):contains("123456789") + td a:nth-child(2)` failed: Waiting failed: 30000ms exceeded
+[2024-10-05T06:34:57.245Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:34:57.282Z] Se hizo clic en el botón de eliminar para el paciente con DPI: 123456789
+[2024-10-05T06:34:57.305Z] Se aceptó la alerta de confirmación para eliminar el paciente.
+[2024-10-05T06:34:57.327Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-05T06:34:57.338Z] El paciente con DPI 123456789 fue eliminado exitosamente.
+[2024-10-05T06:34:57.457Z] Navegador cerrado.
+[2024-10-05T06:38:08.582Z] Navegación a la página exitosa.
+[2024-10-05T06:38:08.656Z] Campo DPI disponible.
+[2024-10-05T06:38:08.953Z] Formulario llenado exitosamente.
+[2024-10-05T06:38:09.187Z] Formulario enviado.
+[2024-10-05T06:38:09.188Z] Error durante la ejecución del test: TypeError: page.waitForTimeout is not a function
+[2024-10-05T06:38:09.212Z] Dialogo detectado: Paciente ingresado con éxito.
+[2024-10-05T06:38:09.224Z] Dialogo aceptado.
+[2024-10-05T06:38:09.243Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-05T06:38:21.557Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:38:21.632Z] Se hizo clic en el botón de editar para el paciente con DPI: 123456789
+[2024-10-05T06:38:21.663Z] Respuesta del servidor: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/registros.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Editar Pacientes</title>
+</head>
+<body>
+
+<form id="form-medicos" method="POST" action="">
+    <div class="img"></div>
+    <div class="text">
+        <font face="snubnose demo">
+            <h1>¡Editar Pacientes!</h1>
+        </font>
+
+                            <input type="hidden" name="id" value="24">
+
+                    <label>DPI: </label>
+                    <input type="number" placeholder="Ingrese DPI" name="dpi" value="123456789"><br><br>
+
+                    <label>Primer Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="primer_nombre" value="Juan"><br><br>
+
+                    <label>Segundo Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="segundo_nombre" value="Carlos"><br><br>
+
+                    <label>Primer Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="primer_apellido" value="Perez"><br><br>
+
+                    <label>Segundo Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="segundo_apellido" value="Lopez"><br><br>
+
+                    <label>Edad: </label>
+                    <input type="number" placeholder="Ingrese la edad" name="edad" value="25"><br><br>
+
+                    <label for="genero">Genero:</label>
+                    <select id="genero" name="genero">
+                        <option value="Masculino" selected>Masculino</option>
+                        <option value="Femenino" >Femenino</option>
+                    </select><br><br>
+
+                    <label>Email: </label>
+                    <input type="email" placeholder="Ingrese el correo" name="correopaciente" value="juan@example.com"><br><br>
+
+                    <label>Fecha de Nacimiento: </label>
+                    <input type="date" name="fecha_nac" value="1995-01-01"><br><br>
+
+                    <label>Dirección: </label>
+                    <input type="text" placeholder="Ingrese dirección" name="direpaciente" value="Calle Falsa 123"><br><br>
+
+                    <label>Teléfono: </label>
+                    <input type="tel" placeholder="Ingrese Teléfono" name="telepaciente" value="12345678"><br> <br>
+
+                    <label>Observaciones: </label>
+                    <input type="text" placeholder="Ingrese observaciones" name="obspaciente" value="Observaciones aquí"><br><br>
+
+                    <label>Médico Encargado: </label>
+                    <select name="medicoencargado">
+                        <option value="">Seleccione un médico</option>
+                                                    <option value="1" selected>
+                                1 Lucia Morales                            </option>
+                                                    <option value="3" >
+                                3 Maria Juana Perez Sagastume                            </option>
+                                                    <option value="6" >
+                                6 Axel Alvarado                            </option>
+                                                    <option value="7" >
+                                7 Lester Lopez                            </option>
+                                                    <option value="8" >
+                                8 Ivan Perez                            </option>
+                                            </select><br><br>
+
+                    <button type="submit" name="btnactualizar" value="ok">Actualizar</button>
+                    </div>
+
+    <div id="alert-container"></div>
+
+    <div class="franja">
+        <a href="URDpacientes.php" id="Regreso">
+            <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
+        </a>
+    </div>
+</form>
+</body>
+</html>
+[2024-10-05T06:38:22.112Z] Navegación a la página de edición de paciente.
+[2024-10-05T06:38:24.058Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-05T06:38:24.063Z] Formulario de edición enviado.
+[2024-10-05T06:38:24.078Z] El paciente fue editado exitosamente.
+[2024-10-05T06:38:24.215Z] Navegador cerrado.
+[2024-10-05T06:38:35.174Z] Navegación a la página de pacientes exitosa.
+[2024-10-05T06:38:35.208Z] Se hizo clic en el botón de eliminar para el paciente con DPI: 123456789
+[2024-10-05T06:38:35.232Z] Se aceptó la alerta de confirmación para eliminar el paciente.
+[2024-10-05T06:38:35.249Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-05T06:38:35.258Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-05T06:38:35.262Z] El paciente con DPI 123456789 fue eliminado exitosamente.
+[2024-10-05T06:38:35.380Z] Navegador cerrado.
+[2024-10-12T23:16:49.114Z] Navegación a la página exitosa.
+[2024-10-12T23:16:49.211Z] Campo DPI disponible.
+[2024-10-12T23:16:49.682Z] Formulario llenado exitosamente.
+[2024-10-12T23:16:49.721Z] Formulario enviado.
+[2024-10-12T23:16:49.721Z] Error durante la ejecución del test: TypeError: page.waitForTimeout is not a function
+[2024-10-12T23:16:49.722Z] Respuesta del servidor: <br />
+<b>Warning</b>:  include(db.php): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\asii\02-sisg\pacientes\regPacientes.php</b> on line <b>2</b><br />
+<br />
+<b>Warning</b>:  include(): Failed opening 'db.php' for inclusion (include_path='C:\xampp\php\PEAR') in <b>C:\xampp\htdocs\asii\02-sisg\pacientes\regPacientes.php</b> on line <b>2</b><br />
+<br />
+<b>Warning</b>:  Undefined variable $conexion in <b>C:\xampp\htdocs\asii\02-sisg\pacientes\regPacientes.php</b> on line <b>58</b><br />
+<br />
+<b>Fatal error</b>:  Uncaught Error: Call to a member function real_escape_string() on null in C:\xampp\htdocs\asii\02-sisg\pacientes\regPacientes.php:58
+Stack trace:
+#0 {main}
+  thrown in <b>C:\xampp\htdocs\asii\02-sisg\pacientes\regPacientes.php</b> on line <b>58</b><br />
+
+[2024-10-12T23:18:22.839Z] Navegación a la página exitosa.
+[2024-10-12T23:18:22.940Z] Campo DPI disponible.
+[2024-10-12T23:18:23.551Z] Formulario llenado exitosamente.
+[2024-10-12T23:18:23.585Z] Formulario enviado.
+[2024-10-12T23:18:23.586Z] Error durante la ejecución del test: TypeError: page.waitForTimeout is not a function
+[2024-10-12T23:18:23.614Z] Dialogo detectado: Paciente ingresado con éxito.
+[2024-10-12T23:18:23.620Z] Dialogo aceptado.
+[2024-10-12T23:18:23.660Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-12T23:19:10.516Z] Navegación a la página de pacientes exitosa.
+[2024-10-12T23:19:10.607Z] Se hizo clic en el botón de editar para el paciente con DPI: 123456789
+[2024-10-12T23:19:10.724Z] Respuesta del servidor: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/registros.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Editar Pacientes</title>
+</head>
+<body>
+
+<form id="form-medicos" method="POST" action="">
+    <div class="img"></div>
+    <div class="text">
+        <font face="snubnose demo">
+            <h1>¡Editar Pacientes!</h1>
+        </font>
+
+                            <input type="hidden" name="id" value="3">
+
+                    <label>DPI: </label>
+                    <input type="number" placeholder="Ingrese DPI" name="dpi" value="123456789"><br><br>
+
+                    <label>Primer Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="primer_nombre" value="Juan"><br><br>
+
+                    <label>Segundo Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="segundo_nombre" value="Carlos"><br><br>
+
+                    <label>Primer Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="primer_apellido" value="Perez"><br><br>
+
+                    <label>Segundo Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="segundo_apellido" value="Lopez"><br><br>
+
+                    <label>Edad: </label>
+                    <input type="number" placeholder="Ingrese la edad" name="edad" value="25"><br><br>
+
+                    <label for="genero">Genero:</label>
+                    <select id="genero" name="genero">
+                        <option value="Masculino" selected>Masculino</option>
+                        <option value="Femenino" >Femenino</option>
+                    </select><br><br>
+
+                    <label>Email: </label>
+                    <input type="email" placeholder="Ingrese el correo" name="correopaciente" value="juan@example.com"><br><br>
+
+                    <label>Fecha de Nacimiento: </label>
+                    <input type="date" name="fecha_nac" value="1995-01-01"><br><br>
+
+                    <label>Dirección: </label>
+                    <input type="text" placeholder="Ingrese dirección" name="direpaciente" value="Calle Falsa 123"><br><br>
+
+                    <label>Teléfono: </label>
+                    <input type="tel" placeholder="Ingrese Teléfono" name="telepaciente" value="12345678"><br> <br>
+
+                    <label>Observaciones: </label>
+                    <input type="text" placeholder="Ingrese observaciones" name="obspaciente" value="Observaciones aquí"><br><br>
+
+                    <label>Médico Encargado: </label>
+                    <select name="medicoencargado">
+                        <option value="">Seleccione un médico</option>
+                                                    <option value="1" selected>
+                                1 dsds dsds                            </option>
+                                            </select><br><br>
+
+                    <button type="submit" name="btnactualizar" value="ok">Actualizar</button>
+                    </div>
+
+    <div id="alert-container"></div>
+
+    <div class="franja">
+        <a href="URDpacientes.php" id="Regreso">
+            <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
+        </a>
+    </div>
+</form>
+</body>
+</html>
+[2024-10-12T23:19:11.133Z] Navegación a la página de edición de paciente.
+[2024-10-12T23:19:13.102Z] Respuesta del servidor: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/registros.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Editar Pacientes</title>
+</head>
+<body>
+
+<form id="form-medicos" method="POST" action="">
+    <div class="img"></div>
+    <div class="text">
+        <font face="snubnose demo">
+            <h1>¡Editar Pacientes!</h1>
+        </font>
+
+        <script>
+                    alert('Paciente actualizado con éxito.');
+                    window.location.href = 'URDpacientes.php'; // Cambia por la URL a la que quieras redirigir
+                  </script>                    <input type="hidden" name="id" value="3">
+
+                    <label>DPI: </label>
+                    <input type="number" placeholder="Ingrese DPI" name="dpi" value="123456789"><br><br>
+
+                    <label>Primer Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="primer_nombre" value="Juan"><br><br>
+
+                    <label>Segundo Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="segundo_nombre" value="Carlos"><br><br>
+
+                    <label>Primer Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="primer_apellido" value="Perez"><br><br>
+
+                    <label>Segundo Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="segundo_apellido" value="Lopez"><br><br>
+
+                    <label>Edad: </label>
+                    <input type="number" placeholder="Ingrese la edad" name="edad" value="25"><br><br>
+
+                    <label for="genero">Genero:</label>
+                    <select id="genero" name="genero">
+                        <option value="Masculino" selected>Masculino</option>
+                        <option value="Femenino" >Femenino</option>
+                    </select><br><br>
+
+                    <label>Email: </label>
+                    <input type="email" placeholder="Ingrese el correo" name="correopaciente" value="juan@example.com"><br><br>
+
+                    <label>Fecha de Nacimiento: </label>
+                    <input type="date" name="fecha_nac" value="1995-01-01"><br><br>
+
+                    <label>Dirección: </label>
+                    <input type="text" placeholder="Ingrese dirección" name="direpaciente" value="Calle Falsa 123"><br><br>
+
+                    <label>Teléfono: </label>
+                    <input type="tel" placeholder="Ingrese Teléfono" name="telepaciente" value="12345678"><br> <br>
+
+                    <label>Observaciones: </label>
+                    <input type="text" placeholder="Ingrese observaciones" name="obspaciente" value="Observaciones aquí"><br><br>
+
+                    <label>Médico Encargado: </label>
+                    <select name="medicoencargado">
+                        <option value="">Seleccione un médico</option>
+                                                    <option value="1" selected>
+                                1 dsds dsds                            </option>
+                                            </select><br><br>
+
+                    <button type="submit" name="btnactualizar" value="ok">Actualizar</button>
+                    </div>
+
+    <div id="alert-container"></div>
+
+    <div class="franja">
+        <a href="URDpacientes.php" id="Regreso">
+            <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
+        </a>
+    </div>
+</form>
+</body>
+</html>
+[2024-10-12T23:19:13.177Z] Formulario de edición enviado.
+[2024-10-12T23:19:13.195Z] El paciente fue editado exitosamente.
+[2024-10-12T23:19:13.548Z] Navegador cerrado.
+[2024-10-12T23:19:47.832Z] Navegación a la página de pacientes exitosa.
+[2024-10-12T23:19:50.449Z] Se hizo clic en el botón de eliminar para el paciente con DPI: 123456789
+[2024-10-12T23:19:50.558Z] Se aceptó la alerta de confirmación para eliminar el paciente.
+[2024-10-12T23:19:50.617Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-12T23:19:50.618Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-12T23:19:50.660Z] El paciente con DPI 123456789 fue eliminado exitosamente.
+[2024-10-12T23:19:50.972Z] Navegador cerrado.
+[2024-10-12T23:20:36.504Z] Navegación a la página exitosa.
+[2024-10-12T23:20:36.628Z] Campo DPI disponible.
+[2024-10-12T23:20:37.264Z] Formulario llenado exitosamente.
+[2024-10-12T23:20:37.314Z] Formulario enviado.
+[2024-10-12T23:20:37.314Z] Error durante la ejecución del test: TypeError: page.waitForTimeout is not a function
+[2024-10-12T23:20:37.341Z] Dialogo detectado: Paciente ingresado con éxito.
+[2024-10-12T23:20:37.345Z] Dialogo aceptado.
+[2024-10-12T23:20:37.390Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-12T23:48:30.216Z] Navegación a la página exitosa.
+[2024-10-12T23:48:30.323Z] Campo DPI disponible.
+[2024-10-12T23:48:30.872Z] Formulario llenado exitosamente.
+[2024-10-12T23:48:30.909Z] Formulario enviado.
+[2024-10-12T23:48:30.909Z] Error durante la ejecución del test: TypeError: page.waitForTimeout is not a function
+[2024-10-12T23:48:30.936Z] Dialogo detectado: Paciente ingresado con éxito.
+[2024-10-12T23:48:30.939Z] Dialogo aceptado.
+[2024-10-12T23:48:30.980Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-12T23:49:38.875Z] Navegación a la página de pacientes exitosa.
+[2024-10-12T23:49:38.969Z] Se hizo clic en el botón de editar para el paciente con DPI: 123456789
+[2024-10-12T23:49:39.029Z] Respuesta del servidor: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/registros.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Editar Pacientes</title>
+</head>
+<body>
+
+<form id="form-medicos" method="POST" action="">
+    <div class="img"></div>
+    <div class="text">
+        <font face="snubnose demo">
+            <h1>¡Editar Pacientes!</h1>
+        </font>
+
+                            <input type="hidden" name="id" value="4">
+
+                    <label>DPI: </label>
+                    <input type="number" placeholder="Ingrese DPI" name="dpi" value="123456789"><br><br>
+
+                    <label>Primer Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="primer_nombre" value="Juan"><br><br>
+
+                    <label>Segundo Nombre: </label>
+                    <input type="text" placeholder="Ingrese nombre" name="segundo_nombre" value="Carlos"><br><br>
+
+                    <label>Primer Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="primer_apellido" value="Perez"><br><br>
+
+                    <label>Segundo Apellido: </label>
+                    <input type="text" placeholder="Ingrese apellido" name="segundo_apellido" value="Lopez"><br><br>
+
+                    <label>Edad: </label>
+                    <input type="number" placeholder="Ingrese la edad" name="edad" value="25"><br><br>
+
+                    <label for="genero">Genero:</label>
+                    <select id="genero" name="genero">
+                        <option value="Masculino" selected>Masculino</option>
+                        <option value="Femenino" >Femenino</option>
+                    </select><br><br>
+
+                    <label>Email: </label>
+                    <input type="email" placeholder="Ingrese el correo" name="correopaciente" value="juan@example.com"><br><br>
+
+                    <label>Fecha de Nacimiento: </label>
+                    <input type="date" name="fecha_nac" value="1995-01-01"><br><br>
+
+                    <label>Dirección: </label>
+                    <input type="text" placeholder="Ingrese dirección" name="direpaciente" value="Calle Falsa 123"><br><br>
+
+                    <label>Teléfono: </label>
+                    <input type="tel" placeholder="Ingrese Teléfono" name="telepaciente" value="12345678"><br> <br>
+
+                    <label>Observaciones: </label>
+                    <input type="text" placeholder="Ingrese observaciones" name="obspaciente" value="Observaciones aquí"><br><br>
+
+                    <label>Médico Encargado: </label>
+                    <select name="medicoencargado">
+                        <option value="">Seleccione un médico</option>
+                                                    <option value="1" selected>
+                                1 dsds dsds                            </option>
+                                            </select><br><br>
+
+                    <button type="submit" name="btnactualizar" value="ok">Actualizar</button>
+                    </div>
+
+    <div id="alert-container"></div>
+
+    <div class="franja">
+        <a href="URDpacientes.php" id="Regreso">
+            <img src="img/Icons/izquierda2.png" alt="Regresar" class="imgRegreso">
+        </a>
+    </div>
+</form>
+</body>
+</html>
+[2024-10-12T23:49:39.611Z] Navegación a la página de edición de paciente.
+[2024-10-12T23:49:41.171Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-12T23:49:41.189Z] Formulario de edición enviado.
+[2024-10-12T23:49:41.210Z] El paciente fue editado exitosamente.
+[2024-10-12T23:49:41.550Z] Navegador cerrado.
+[2024-10-12T23:50:10.438Z] Navegación a la página de pacientes exitosa.
+[2024-10-12T23:50:22.576Z] Se hizo clic en el botón de eliminar para el paciente con DPI: 123456789
+[2024-10-12T23:50:22.671Z] Se aceptó la alerta de confirmación para eliminar el paciente.
+[2024-10-12T23:50:22.742Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-12T23:50:22.743Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-12T23:50:22.787Z] Error: El paciente con DPI 123456789 aún aparece en la tabla.
+[2024-10-12T23:50:23.109Z] Navegador cerrado.
+[2024-10-12T23:50:53.986Z] Navegación a la página de pacientes exitosa.
+[2024-10-12T23:50:56.011Z] Se hizo clic en el botón de eliminar para el paciente con DPI: 123456789
+[2024-10-12T23:50:56.096Z] Se aceptó la alerta de confirmación para eliminar el paciente.
+[2024-10-12T23:50:56.124Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-12T23:50:56.125Z] Error al obtener la respuesta: ProtocolError: Could not load body for this request. This might happen if the request is a preflight request.
+[2024-10-12T23:50:56.145Z] El paciente con DPI 123456789 fue eliminado exitosamente.
+[2024-10-12T23:50:56.479Z] Navegador cerrado.

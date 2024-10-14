@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 VALUES ('$id_paciente', '$id_medico', '$id_horario', '$fecha', 1, '$id_motivo')";
 
         if ($conexion->query($sql) === TRUE) {
-            header("Location: menu_citas.html");
+            header("Location: menu_citas.php");
             exit(); // Asegúrate de salir después de redirigir
         } else {
             die("Error: " . $sql . "<br>" . $conexion->error); // Cambiado para mostrar errores
@@ -172,7 +172,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
 
             <button type="submit" class="btn btn-success">Guardar</button>
-            <a href="menu_citas.html" class="btn btn-secondary">Cancelar</a>
+            <a href="menu_citas.php" class="btn btn-secondary">Cancelar</a>
         </form>
     </div>
 </body>

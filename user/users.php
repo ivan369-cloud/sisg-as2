@@ -38,6 +38,9 @@
             width: 40px;
             height: auto;
         }
+        .action-icons img {
+            cursor: pointer; /* Cambia el cursor a puntero para mejor usabilidad */
+        }
     </style>
 </head>
 <body>
@@ -50,7 +53,7 @@
                     <th>Nombre</th>
                     <th>Usuario</th>
                     <th>ID Cargo</th>
-                    <th>Accion</th>
+                    <th>Acción</th>
                 </tr>
             </thead>
             <tbody>
@@ -81,6 +84,7 @@
 
                     // Columna de acciones
                     const actionsCell = row.insertCell(4);
+                    actionsCell.className = 'action-icons'; // Clase para aplicar estilos
                     actionsCell.innerHTML = `
                         <a href="update.php?id=${usuario.id}">
                             <img src="../01-citas/Img/Icons/edit.png" alt="Editar" width="30" height="30">
@@ -97,6 +101,4 @@
     </script>
 </body>
 </html>
-
-
 

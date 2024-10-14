@@ -61,9 +61,28 @@
             </select>
         </div>
         <button type="submit" class="btn btn-success">Actualizar</button>        
-        <button type="button" class="btn btn-danger" onclick="eliminarUsuario()">Eliminar</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmDeleteModal">Eliminar</button>
         <a href="users.php" class="btn btn-secondary">Cancelar</a>
     </form>
+</div>
+
+<!-- Modal de confirmación -->
+<div id="confirmDeleteModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Confirmar eliminación</h4>
+            </div>
+            <div class="modal-body">
+                <p>¿Estás seguro de que deseas eliminar este usuario? Esta acción no se puede deshacer.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="confirmDeleteButton">Eliminar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -77,7 +96,7 @@
 
             document.getElementById('nombre').value = userData.nombre;
             document.getElementById('usuario').value = userData.usuario;
-            document.getElementById('id_cargo').value = userData.id_cargo;
+            document.getElementById('id_cargo').value = userData.id_cargo; // Asegúrate de que userData tenga el id_cargo correcto
         } catch (error) {
             console.error('Error al cargar los datos del usuario:', error);
             alert('Hubo un problema al cargar los datos del usuario.');
@@ -92,22 +111,30 @@
             const selectCargo = document.getElementById('id_cargo');
             cargos.forEach(cargo => {
                 const option = document.createElement('option');
-                option.value = cargo.id;
-                option.textContent = cargo.cargos;
+                option.value = cargo.id; // ID que se enviará
+                option.textContent = cargo.cargos; // Nombre que se mostrará
                 selectCargo.appendChild(option);
             });
+
+            // Establece el valor del select al id_cargo actual del usuario
+            cargarDatosUsuario();
         } catch (error) {
             console.error('Error al cargar los cargos:', error);
             alert('Hubo un problema al cargar los cargos.');
         }
     }
 
-    cargarOpcionesCargos().then(cargarDatosUsuario);
-
     async function actualizarUsuario(event) {
         event.preventDefault();
 
+        const nombre = document.getElementById('nombre').value;
+        const usuario = document.getElementById('usuario').value;
         const id_cargo = document.getElementById('id_cargo').value;
+
+        if (!id_cargo) {
+            alert('Por favor, seleccione un cargo.');
+            return;
+        }
 
         try {
             const response = await fetch(`http://localhost:3000/usuarios/${userId}`, {
@@ -115,11 +142,11 @@
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ id_cargo })
+                body: JSON.stringify({ nombre, usuario, id_cargo })
             });
 
             if (response.ok) {
-                alert('Usuario actualizado exitosamente');
+                //alert('Usuario actualizado exitosamente');
                 window.location.href = 'users.php';
             } else {
                 const errorText = await response.text();
@@ -132,29 +159,34 @@
     }
 
     async function eliminarUsuario() {
-        if (confirm('¿Estás seguro de que deseas eliminar este usuario? Esta acción no se puede deshacer.')) {
-            try {
-                const response = await fetch(`http://localhost:3000/usuarios/${userId}`, {
-                    method: 'DELETE'
-                });
+        try {
+            const response = await fetch(`http://localhost:3000/usuarios/${userId}`, {
+                method: 'DELETE'
+            });
 
-                if (response.ok) {
-                    alert('Usuario eliminado exitosamente');
-                    window.location.href = 'users.php';
-                } else {
-                    const errorText = await response.text();
-                    alert(`Error al eliminar el usuario: ${errorText}`);
-                }
-            } catch (error) {
-                console.error('Error en la solicitud:', error);
-                alert('Hubo un problema con la solicitud.');
+            if (response.ok) {
+                //alert('Usuario eliminado exitosamente');
+                window.location.href = 'users.php';
+            } else {
+                const errorText = await response.text();
+                alert(`Error al eliminar el usuario: ${errorText}`);
             }
+        } catch (error) {
+            console.error('Error en la solicitud:', error);
+            alert('Hubo un problema con la solicitud.');
         }
     }
 
     document.getElementById('editUserForm').addEventListener('submit', actualizarUsuario);
+
+    // Asignar el evento de clic al botón de confirmación del modal
+    document.getElementById('confirmDeleteButton').addEventListener('click', function() {
+        eliminarUsuario();
+        $('#confirmDeleteModal').modal('hide'); // Cerrar el modal
+    });
+
+    // Cargar opciones de cargos y datos del usuario al cargar la página
+    cargarOpcionesCargos();
 </script>
 </body>
 </html>
-
-
