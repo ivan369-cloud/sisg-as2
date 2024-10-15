@@ -46,6 +46,7 @@
             <li><a href="medicos/Menumedicos.html">Médicos</a></li>
             <li><a href="pacientes/Menupacientes.html">Pacientes</a></li>
             <li><a href="01-citas/menu_citas.html">Citas</a></li>
+            <li><a href="dashboard/dashboard.php">Dashboard Citas</a></li>
             <li><a href="./user/menu_users.html">Usuarios</a></li>
             <li><a href="index.html">Cerrar sesión</a></li>
             <?php

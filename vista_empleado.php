@@ -61,6 +61,7 @@
             <li><a href="pacientes/menu_paciente.php">Pacientes</a></li>
             <!-- <li><a href="pacientes/Menupacientes.html">Pacientes</a></li> -->
             <li><a href="01-citas/menu_citas.php">Citas</a></li>
+            <li><a href="dashboard/dashboard.php">Dashboard Citas</a></li>
             <li><a href="index.html">Cerrar sesión</a></li>
             <?php
             session_start(); // Iniciar la sesión para acceder a las variables de sesión
